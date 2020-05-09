@@ -2408,7 +2408,471 @@ input:focus{
 
 
 
+/*--------Адаптив главной--------*/
 
+@media(min-width: 321px) and (max-width: 667px){
+
+body {
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+	font-family: 'Ubuntu', sans-serif;
+
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 200;
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+td{
+	padding: 0px;
+}
+th{
+	padding: 0px;
+}
+table{
+	border-spacing: 0px 1px;
+}
+
+	/*-----------------------------------------Header-----------------------------------------*/
+
+.header_ {
+	width: 50%;
+	padding-top: 5px;
+	margin-bottom: 0px;
+}
+
+.header_inner {
+	/* display: flex; */
+	justify-content: space-between;
+	/* padding-top: 12px;	 */
+	/* padding-left: 12px;	 */
+}
+
+.header_item{
+	
+}
+
+.header_item_logo{
+	width: 180px;
+	margin-left: 20px;
+}
+
+.header_text{
+	visibility: hidden;
+    display: none;
+}
+.header_text1{
+	visibility: hidden;
+    display: none;
+}
+
+.header_text2{
+	visibility: hidden;
+    display: none;
+}
+
+.header_text3{
+	line-height: 1;
+	padding-left: 50px;
+	letter-spacing: -0.5px;
+	
+	font-size: 14px;
+}
+
+.strip_header{
+	width: 240px;
+	height: 3px;
+	background: #754e6a;
+	left: 35%;
+	position: relative;
+}
+
+.header_text4{
+	visibility: visible;
+    display: block;
+	
+	text-align: justify;
+	font-weight: 400;
+	width: 311px;
+	line-height: 1;
+	padding-top: 6px;
+}
+
+.header_text_image{
+	left: 12px;
+	width: 30px; 
+	height: 30px;
+}
+
+/*---------------------------------Container-----------------------------------*/
+.container{
+	width: 100%;
+	max-width: 667px;
+	max-height: px;
+	margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+hr{
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 40px 0; 
+
+	border: 0;
+
+	background-color: #e5e5e5;
+}
+
+a:active {
+  color: red;
+}
+
+/*-----------------------------------------Меню навигации--------------------------*/
+.menu-main{
+	visibility: hidden;
+    display: none;
+}
+.menu {
+	font-size: 20px;
+	height: 70px;
+	text-align: center;		
+}
+#top-menu{
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	margin: 0px 125px;
+	padding: 0 0 0 0px;
+}
+.menu-main:active{
+	color: red;
+}
+/* #top a:active{ */
+	/* text-decoration: underline; */
+	/* border-bottom: 1px solid currentColor; /* Параметры линии под текстом */ 
+    /* font-weight: normal; /* Убираем жирное начертание */
+    /* padding-bottom: 1px; /* Расстояние от текста до линии */ 
+	
+	/* font-weight: 600; */
+/* } */
+.top {
+	display: block;
+	padding: 20px 0;	
+	color: #000000;	
+	text-decoration: none;
+}
+.top_{
+	display: block;
+    padding: 20px 0;
+    color: #997A90;
+    text-decoration: none;
+    font-weight: 700;
+    background: 0 0;
+    background: -moz-linear-gradient(top,rgba(0,0,0,0) 0,#000 100%);
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,#000 100%);
+    background: -o-linear-gradient(top,rgba(0,0,0,0) 0,#000 100%);
+    background: -ms-linear-gradient(top,rgba(0,0,0,0) 0,#000 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#000, GradientType=0);
+    background-repeat: repeat-x;
+    background-position: 0 65%;
+    background-size: 1px 1px;
+}
+
+.top1_mediaMyPhone{
+	display: block;
+	/* padding: 20px 0; */
+	color: #fff;	
+	text-decoration: none;
+	
+	display: block;
+	padding: 6px 18px;
+
+  font-size: 20px;
+  font-weight: 200;
+
+  transition-duration: .25s;
+}
+.top:hover {
+	color: #754e6a;	
+	text-decoration: none;
+}
+
+.sub-menu_mediaMyPhone{
+	width: 310px;
+	height: 146px;
+	
+	font-size: 15px;
+	text-align: left;
+	line-height: 1.2;
+	top: 40%;
+	left: 5%;
+	right: 10%;
+	border-radius: 2px;
+    /* display: none; */
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.2);
+    z-index: 10001;
+}
+
+.sub-menu1_mediaMyPhone{
+	content: "";
+	position: absolute;
+	z-index: 5;
+	left: 38%;
+	top: 30%;
+	width: 0;
+	height: 0;
+	border: 100px solid;
+	border-width: 10px;
+	border-color: transparent;
+	border-bottom-color: white;
+	transform: translate(-50%);
+	opacity: 1;
+	transition: .3s;
+	/* display: none; */
+}
+
+/* Links inside the dropdown */
+.sub-menu_mediaMyPhone a{
+    color: black;
+	
+	margin-top: 12px;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Show the dropdown menu on hover */
+.top1_mediaMyPhone:hover .sub-menu_mediaMyPhone {display: block; transition: .3s;}
+.top1_mediaMyPhone:hover .sub-menu1_mediaMyPhone {display: block;}
+.sub-menu_mediaMyPhone:active{
+    color: #ebe2e8;
+}
+
+
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu_btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 65px;
+  right: 13px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 70px;
+  right: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 90%;
+  height: 2px;
+
+  background-color: #fff;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -6px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 6px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+
+  width: 300px;
+  height: 100%;
+
+  margin: 0;
+  padding: 80px 0;
+
+  list-style: none;
+
+  background-color: #754E6A;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+  z-index: 10000;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 18px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 200;
+
+  text-decoration: none;
+
+  transition-duration: .25s;
+}
+
+/*-----------------------------------------Полоска при скролле--------------------------*/
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+	position: fixed;
+	top: 0;
+	z-index: 1001;
+	width: 100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+	width: 100%;
+	height: 4px;
+	background: #ebe2e8;
+	opacity: 0.1;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+	height: 4px;
+	background: #754e6a;
+	width: 0%;
+}
+/*---------------------------------------------------Itnro------------------------------*/
+
+.intro{
+	width: 315px;
+	height: 300px;
+	background: url("../img/intro4.png") no-repeat center;
+	background-size: cover;
+}
+
+.intro_text{
+	font-size: 32px;
+	color: #fff;
+	font-weight: bold;
+	padding-top: 20%;
+	
+	line-height: 1.2;
+	text-shadow: 0px 3px 3px #00000047; /* Параметры тени */
+}
+
+.button{
+	visibility: hidden;
+    display: none;
+}
+
+.arrow{
+	height: 200px;
+	/*-padding-top: 50%;-*/
+	background: url("../img/arrow2.png") no-repeat center;
+}
+
+.button_media{
+	z-index: 1000;
+	visibility: visible;
+    display: block;
+	
+	font-size: 14px;
+	background-color: #754e6a;
+	font-weight: 500;
+	width: 170px;
+	height: 40px;
+	text-align: center;
+	padding: 10px 20px;
+	
+    position: absolute;
+	border-radius: 10px;
+	left: 50%;
+    transform: translate(-50%, -50%);	
+	
+	color: #fff; /* Цвет текста */
+	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+.button_media:hover{
+	color: #754e6a;
+	background:#d6c0cf;
+	box-shadow: inset 0 0 0 1px #ffffff;
+}
+/*---------------------2 блок-----------------------*/
+.dom{
+	padding-top: 23%;
+}
+
+.heading{
+	font-size: 24px;
+}
+
+.heading_text{
+	visibility: hidden;
+    display: none;
+}
+.heading_text_media{
+	position: static;
+	
+	visibility: visible;
+    display: block;
+	padding-top: 6px;
+	
+	font-size: 16px;
+	line-height: 1.35;
+	letter-spacing: -0.8px;
+}
 
 
 
