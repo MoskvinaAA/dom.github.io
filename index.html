@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="viewport" content="user-scalable=yes">
+	<!-- <meta name="viewport" content="user-scalable=yes"> -->
+	<!-- <meta name='viewport' content='width=device-width, initial-scale=0.3'> -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/media320.css">
 	<link rel="stylesheet" type="text/css" href="css/mediaMyPhone.css">
@@ -20,9 +21,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- /*Телефон*/ -->
 	<!-- Подключение библиотеки jQuery -->
-	<script src="jquery.js"></script>
+	<script src="js/jquery.js"></script>
 	<!-- Подключение jQuery плагина Masked Input -->
-	<script src="jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 </head>
 
 <body>
@@ -94,35 +95,54 @@
 	</div>	
 </div>
 </div>
-
-
-
+<!--------------------Гамбургер меню------------------>
 <div class="hamburger-menu">
     <input id="menu__toggle" type="checkbox" />
-	<div class="menu_btn"><img src="img/Ellipse.png" alt="HTML5" style="vertical-align: middle;"/></div>
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
-    </label>
+	<div class="menu_btn"><img src="img/hamburger-menu/Ellipse.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__btn" for="menu__toggle"></label>
 
-    <ul class="menu__box">
-			<li><a class="menu__item" href="C:/Users/Admin/Desktop/Diplom/index.html">Главная</a></li>
-				<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/photo.html">Фото</a></li>
-				<li><div class= "top1_mediaMyPhone" href="">Услуги▾
-					<div class="sub-menu1_mediaMyPhone"></div>
-						<div class="sub-menu_mediaMyPhone">
-							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/1.html">Медицинский уход</a>
-							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/2.html">Пансионат для инвалидов по зрению</a>
-							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/3.html">Психоневрологический пансионат</a>
-							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/4.html">Сестринский уход за пожилыми людьми</a>
-						</div>
+	<input id="menu__t" type="checkbox" />
+	<div class="menu_b"><img src="img/hamburger-menu/close_menu.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__b" for="menu__t"></label>
+
+
+	<ul class="menu__box">
+	<img src="img/hamburger-menu/close_menu.png" class="menu__box_img_close" onclick="myFunction()" alt="HTML5" style="vertical-align: middle;"/>
+		<li><a class="menu__item" href="C:/Users/Admin/Desktop/Diplom/index.html">Главная</a></li>
+		<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/photo.html">Фото</a></li>
+			<li><div class= "top1_mediaMyPhone" href="">Услуги▾
+				<div class="sub-menu1_mediaMyPhone"></div>
+					<div class="sub-menu_mediaMyPhone">
+						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/1.html">Медицинский уход</a>
+						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/2.html">Пансионат для инвалидов по зрению</a>
+						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/3.html">Психоневрологический пансионат</a>
+						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/4.html">Сестринский уход за пожилыми людьми</a>
 					</div>
-				</li>
-				<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/prices.html">Цены</a></li>
-				<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/oformlenie.html">Оформление</a></li>
-				<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/contacts.html">Контакты</a></li>
-				<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/request.html">Отправить заявку</a></li>
-    </ul>
-  </div>
+				</div>
+			</li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/prices.html">Цены</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/oformlenie.html">Оформление</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/contacts.html">Контакты</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/request.html">Отправить заявку</a></li>		
+   <table>
+		<tr>
+			<td>
+				<div class="menu__box_icon1"><img src="img/hamburger-menu/1.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://www.facebook.com/grandpa.filipych"></a>
+
+				<div class="menu__box_icon2"><img src="img/hamburger-menu/2.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://vk.com/club155151679"></a>
+
+				<div class="menu__box_icon3"><img src="img/hamburger-menu/3.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://ok.ru/filipych"></a>
+			</td>
+		</tr>
+	</table>
+	</ul>
+</div>
+
+
+
 
  <!--------------------- Главный блок --------------------->
 <div class="intro">
@@ -544,7 +564,7 @@
 				
 					<div class = "img_ma">
 					<a href="https://www.instagram.com/moskvina.a_/?hl=rusrc="/>
-					<img src="img/ma.png" alt="HTML5"/></div>
+					<img src="img/footer/ma.png" alt="HTML5"/></div>
 				</th>
 				<th width="350px">
 					<div class = "TheMainThing_footer">
@@ -563,15 +583,15 @@
 			<tr>
 			<td>
 				<div class = "img_strip">
-					<img src="img/strip.png" alt="HTML5"/></div>
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
 			</td>
 			<td>
 				<div class = "img_strip">
-					<img src="img/strip.png"alt="HTML5"/></div>
+					<img src="img/footer/strip.png"alt="HTML5"/></div>
 			</td>
 			<td>
 				<div class = "img_strip">
-					<img src="img/strip.png" alt="HTML5"/></div>
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
 			</td>
 			</tr>
 			
@@ -581,7 +601,7 @@
 						<tr>
 							<td>
 								<div class="img_footer">
-								<img src="img/gps.png" alt="HTML5" style="vertical-align: middle;"/>
+								<img src="img/footer/gps.png" alt="HTML5" style="vertical-align: middle;"/>
 							</td>
 							<td>
 								<div class="_">
@@ -593,7 +613,7 @@
 							<td>
 							</div>
 								<div class="img_footer">
-								<img src="img/phone.png" alt="HTML5" style="vertical-align: middle;"/>
+								<img src="img/footer/phone.png" alt="HTML5" style="vertical-align: middle;"/>
 							</td>
 							<td>
 							<div class="_1">
@@ -604,7 +624,7 @@
 						<tr>
 							<td>
 								<div class="img_footer">
-								<img src="img/1message.png" alt="HTML5" style="vertical-align: middle;"/>
+								<img src="img/footer/1message.png" alt="HTML5" style="vertical-align: middle;"/>
 							</td>
 							<td>
 							<div class="_">
@@ -634,11 +654,11 @@
 					<div class = "social_footer">
 						<div class="img_icon_footer">
 						<a href="https://www.facebook.com/grandpa.filipych">
-							<img src="img/f_icon.png"/></a>
+							<img src="img/footer/f_icon.png"/></a>
 						<a href="https://vk.com/club155151679">
-							<img src="img/vk_icon.png"/></a>
+							<img src="img/footer/vk_icon.png"/></a>
 						<a href="https://ok.ru/filipych">
-							<img src="img/o_icon.png"/></a>
+							<img src="img/footer/o_icon.png"/></a>
 						</div>
 					</div>
 				</td>
