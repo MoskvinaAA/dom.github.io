@@ -2,16 +2,17 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <meta name="viewport" content="user-scalable=yes"> -->
-	<!-- <meta name='viewport' content='width=device-width, initial-scale=0.3'> -->
+	<meta name="viewport" content="user-scalable=no">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/media320.css">
 	<link rel="stylesheet" type="text/css" href="css/mediaMyPhone.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<title>Дом престарелых "Филипыч"</title>
 	<script src="js/script.js"/>
+	<title>Дом престарелых "Филипыч"</title>
+
 	<!-- /*Адаптив*/ -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- /*Анимация форм*/ -->
@@ -33,6 +34,11 @@
 		<div class="progress-bar" id="myBar"></div>
 	</div>
 </div>
+<!-- <div class="header_phone"> -->
+	<!-- <div class="progress-container1"> -->
+		<!-- <div class="progress-bar1" id="myBar"></div> -->
+	<!-- </div> -->
+<!-- </div> -->
 
 <!-------------- Шапка ------------------->
 <header class="header_">
@@ -101,12 +107,10 @@
 	<div class="menu_btn"><img src="img/hamburger-menu/Ellipse.png" alt="HTML5" style="vertical-align: middle;"/></div>
     <label class="menu__btn" for="menu__toggle"></label>
 
-	<input id="menu__t" type="checkbox" />
-	<div class="menu_b"><img src="img/hamburger-menu/close_menu.png" alt="HTML5" style="vertical-align: middle;"/></div>
-    <label class="menu__b" for="menu__t"></label>
-
-
 	<ul class="menu__box">
+	<input id="menu__toggle" type="checkbox" />
+	<div class="menu_b"><img src="img/hamburger-menu/close_menu.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__b" for="menu__toggle"></label>
 	<img src="img/hamburger-menu/close_menu.png" class="menu__box_img_close" onclick="myFunction()" alt="HTML5" style="vertical-align: middle;"/>
 		<li><a class="menu__item" href="C:/Users/Admin/Desktop/Diplom/index.html">Главная</a></li>
 		<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/photo.html">Фото</a></li>
@@ -141,7 +145,25 @@
 	</ul>
 </div>
 
+<script>
+$(function() {
+    $('.hamburger-menu > li').click(function(e) { // limit click to children of mainmenue
+        var $el = $('ul',this); // element to toggle
+        $('.hamburger-menu > li > ul').not($el).slideUp(); // slide up other elements
+        $el.stop(true, true).slideToggle(400); // toggle element
+        return false;
+    });
+    $('.hamburger-menu > li > ul > li').click(function(e) {
+        e.stopPropagation();  // stop events from bubbling from sub menu clicks
+    });
+});​
 
+$('.hamburger-menu').find('> li').click(function() {
+    $('.hamburger-menu > li').not(this).find('ul').slideUp();
+    $(this).find('ul').stop(true, true).slideToggle(400);
+    return false;
+});​
+</script>
 
 
  <!--------------------- Главный блок --------------------->
@@ -308,8 +330,13 @@
 <div class = "message">
 	<div class="container">
 		<div class="message_text">Оставьте сообщение</div>
+		
 		<div class="message_text_media">Оставьте<br>сообщение
 		<img src="img/message_media.png" alt="HTML5" style="vertical-align: middle;" width="320" height="60"/></div>
+		
+		<div class="message_img_phone">
+		<img  src="img/message_media.png" alt="HTML5" style="vertical-align: middle;" width="375" height="70"/></div> 
+		<div class="message_text_phone">Оставьте<br>сообщение</div>
 	</div>
 </div>
 
@@ -351,6 +378,7 @@
 					</div>		
 
 					<button id="button" class="button2" class="btn_submit disabled" type="submit" value="Отправить">Отправить</button>
+					<!-- <div id="button" class="button2" class="btn_submit disabled" type="submit" value="Отправить">Отправить</div>  -->
 					
 					<!-- Выдиление req формы -->
 					<script type="text/javascript">
@@ -674,7 +702,7 @@
 
 
 
-<!---- Доп кнопки ----->
+<!------------------ Доп кнопки -------------------->
 <!---- Кн поднятия ---->
 <div id="button_up"><img src="img/up.png"/></div>
 <script type="text/javascript">
@@ -743,26 +771,5 @@ var h_hght1 = 0; // высота шапки
     });
 </script>
 
-
-
-<!-- <script> $(document).ready(function(){ -->
-<!-- var url=document.location.href; $.each($(".top-menu li a"),function(){ -->
-  <!-- if(this.href==url){$(this).addClass('active');}; -->
-  <!-- });  -->
-<!-- });  -->
-<!-- </script> -->
-<!-- <script> -->
-<!-- $(document).ready(function () { -->
-    <!-- $('#top-menu li a').each(function () { -->
-        <!-- var location = window.location.href; -->
-        <!-- var link = this.href; -->
-        <!-- if (location == link) { -->
-            <!-- $(this).addClass('active'); -->
-        <!-- } -->
-    <!-- }); -->
-<!-- }); -->
-<!-- </script> -->
-<script>
-</script>
 </body>
 </html> 

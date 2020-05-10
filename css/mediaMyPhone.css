@@ -31,8 +31,32 @@ th{
 table{
 	border-spacing: 0px 1px;
 }
+/*---------------------------------Container-----------------------------------*/
+.container{
+	width: 100%;
+	max-width: 667px;
+	margin: 0 auto;
+}
 
-	/*-----------------------------------------Header-----------------------------------------*/
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+hr{
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 40px 0; 
+
+	border: 0;
+
+	background-color: #e5e5e5;
+}
+
+a:active {
+  color: red;
+}
+/*-----------------------------------------Header-----------------------------------------*/
 
 .header_ {
 	width: 50%;
@@ -41,14 +65,7 @@ table{
 }
 
 .header_inner {
-	/* display: flex; */
 	justify-content: space-between;
-	/* padding-top: 12px;	 */
-	/* padding-left: 12px;	 */
-}
-
-.header_item{
-	
 }
 
 .header_item_logo{
@@ -104,33 +121,6 @@ table{
 	height: 30px;
 }
 
-/*---------------------------------Container-----------------------------------*/
-.container{
-	width: 100%;
-	max-width: 667px;
-	max-height: px;
-	margin: 0 auto;
-}
-
-h1,h2,h3,h4,h5,h6{
-	margin: 0;
-}
-
-hr{
-	display: block;
-	width: 100%;
-	height: 1px;
-	margin: 40px 0; 
-
-	border: 0;
-
-	background-color: #e5e5e5;
-}
-
-a:active {
-  color: red;
-}
-
 /*-----------------------------------------Меню навигации--------------------------*/
 .menu-main{
 	visibility: hidden;
@@ -183,6 +173,11 @@ a:active {
 
 
 /*-----------------------------------------Гамбургер меню--------------------------*/
+.hamburger-menu{
+	visibility: visible;
+    display: block;
+}
+
 .top1_mediaMyPhone{
 	display: block;
 	/* padding: 20px 0; */
@@ -246,52 +241,15 @@ a:active {
     display: block;
 }
 /* Show the dropdown menu on hover */
-.top1_mediaMyPhone:hover .sub-menu_mediaMyPhone {display: block; transition: .3s; color: #ebe2e8;}
-.top1_mediaMyPhone:hover .sub-menu1_mediaMyPhone {display: block; color: #ebe2e8;} 
-.sub-menu_mediaMyPhone:active{
-    color: #ebe2e8;
-}
-
-#menu__t {
-  opacity: 0;
-}
-
-#menu__t:checked ~ .menu__box {
-  visibility: visible;
-  right: 0;
-}
-
-.menu_b {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 14px;
-  right: 15px;
-
-  cursor: pointer;
-  z-index: 1;
-  
-    visibility: hidden;
-}
-
-.menu__b {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 12px;
-  right: 13px;
-
-  width: 26px;
-  height: 26px;
-
-  cursor: pointer;
-  z-index: 100000;
-}
-
-
+/* .top1_mediaMyPhone:hover .sub-menu_mediaMyPhone {display: block; transition: .3s; color: #ebe2e8;} */
+/* .top1_mediaMyPhone:hover .sub-menu1_mediaMyPhone {display: block; color: #ebe2e8;}  */
+/* .sub-menu_mediaMyPhone:active{ */
+    /* color: #ebe2e8; */
+/* } */
 
 #menu__toggle {
   opacity: 0;
+  position: absolute;
 }
 
 #menu__toggle:checked ~ .menu__box {
@@ -324,6 +282,32 @@ a:active {
   z-index: 100000;
 }
 
+.menu_b {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 14px;
+  right: 15px;
+
+  cursor: pointer;
+  z-index: 1;
+  
+    visibility: hidden;
+}
+
+.menu__b {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 12px;
+  right: 13px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 100000;
+}
 
 .menu__box {
   display: block;
@@ -366,30 +350,16 @@ a:active {
 }
 
 .menu__box_img_close{
-	/* visibility: visible; */
-  /* visibility: hidden; */
-  
-  /* display: block; */
-  /* position: fixed; */
-  /* top: 0; */
-  /* right: 0; */
-
-  /* margin: 0; */
-  padding: 15px 15px;
-
-  /* list-style: none; */
-
-  /* transition-duration: .25s; */
-  /* z-index: 10000; */
+	padding: 15px 15px;
   
     display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0px;
-  right: 0px;
+	align-items: center;
+	position: fixed;
+	top: 0px;
+	right: 0px;
 
-  cursor: pointer;
-  z-index: 1;
+	cursor: pointer;
+	z-index: 1;
 }
 
 .menu__box_icon1{
@@ -412,34 +382,10 @@ a:active {
 	bottom: 10px;
 	padding-left: 100px;
 }
-/*-----------------------------------------Полоска при скролле--------------------------*/
-
-/* Style the header: fixed position (always stay at the top) */
-.header {
-	position: fixed;
-	top: 0;
-	z-index: 1001;
-	width: 100%;
-}
-
-/* The progress container (grey background) */
-.progress-container {
-	width: 100%;
-	height: 4px;
-	background: #ebe2e8;
-	opacity: 0.1;
-}
-
-/* The progress bar (scroll indicator) */
-.progress-bar {
-	height: 4px;
-	background: #754e6a;
-	width: 0%;
-}
 /*---------------------------------------------------Itnro------------------------------*/
 
 .intro{
-	width: 315px;
+	width: 375px;
 	height: 300px;
 	background: url("../img/intro4.png") no-repeat center;
 	background-size: cover;
@@ -520,7 +466,7 @@ a:active {
 
 /*---------------------3 блок--------------------------------*/
 .text{
-	padding-top: 98%;
+	padding-top: 2%;
 	position: relative;
 	background: left;
 	/* padding-top: 20%; */
@@ -557,24 +503,60 @@ a:active {
 	font-size: 16px;
 }
 
+/*------------------- 4 блок -------------------*/
+.message{
+	top: 30px;
+	position: relative;
+	background: none;
+	background-size: cover;
+}
+.message_text{
+	visibility: hidden;
+	display: none;
+}
+.message_img_phone{
+	position: absolute;
+}
+.message_text_phone{
+	visibility: visible;
+	display: block;
+	
+	position: relative;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	line-height: 1.1;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.message_text_media{
+	/* visibility: visible; */
+	/* display: block; */
+	visibility: hidden;
+	display: none;
+}
+
+/*---------------------5 блок - Оставьте сообщение----------*/
 /* form starting stylings ------------------------------- */
 .form{
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 200;
-	padding-top: 1000px;
-	padding-left: 18.5%;
+	/* padding-top: 10px; */
+	padding-left: 6%;
 }
 
 .group{
 	position: relative;
 	margin-bottom: 25px;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 /* Подсказка */
 input{	
 	font-family: 'Arial', sans-serif;
-	font-size: 17px; 
+	font-size: 15px; 
 	color: #9D9D9D;
 	padding-top: 3%;
 	padding-bottom: 3%;
@@ -638,30 +620,6 @@ input:focus{
 	color: #754e6a;
 	background:#d6c0cf;
 	box-shadow: inset 0 0 0 1px #ffffff;
-}
-/*---------------------5 блок - Оставьте сообщение----------*/
-.message{
-	top: 960px;
-	position: relative;
-	
-	background: url("../img/message_media.png");
-	background-size: cover;
-}
-.message_text{
-	visibility: hidden;
-	display: none;
-}
-
-.message_text_media{
-	visibility: visible;
-	display: block;
-	
-	font-size: 24px;
-	color: #fff;
-	font-weight: bold;
-	text-align: left;
-	padding-top: 4%;
-	line-height: 1.1;
 }
 /*---------------------Настройка полей формы--------------------------------*/
 input:required{ 
