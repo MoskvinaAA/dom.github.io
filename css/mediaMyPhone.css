@@ -129,14 +129,13 @@ hr{
 }
 .podmenu{
 	display: none;
-	 z-index: 10001;
+	z-index: 10001;
 }
 .top1_mediaMyPhone{
 	/* padding: 20px 0; */
 	color: #fff;	
 	text-decoration: none;
-	
-	display: block;
+
 	padding: 8px 18px;
 	margin-left: 8px;
 
@@ -149,19 +148,21 @@ hr{
 }
 
 .sub-menu_mediaMyPhone{
+	position: absolute;
+	
 	width: 310px;
 	height: 160px;
 	
 	font-size: 15px;
 	text-align: left;
 	line-height: 1.3;
-	top: 30.9%;
+	top: 36.5%;
 	left: -37%;
 	right: 10%;
 	border-radius: 2px;
-    position: absolute;
+    
     background-color: #fff;
-    min-width: 160px;
+    /* min-width: 160px; */
     box-shadow: 0px 3px 8px 1px rgba(0,0,0,0.2);
     z-index: 10001;
 	
@@ -169,13 +170,15 @@ hr{
 }
 
 .sub-menu1_mediaMyPhone{
-	content: "";
+	/* content: ""; */
 	position: absolute;
-	z-index: 5;
-	left: 27%;
-	top: 28%;
 	width: 0;
 	height: 0;
+	
+	z-index: 5;
+	left: 27%;
+	top: 33%;
+
 	border: 100px solid;
 	border-width: 10px;
 	border-color: transparent;
@@ -186,13 +189,13 @@ hr{
 }
 
 /* Links inside the dropdown */
-/* .sub-menu_mediaMyPhone a{ */
-    /* color: black; */
+.sub-menu_mediaMyPhone a{
+    color: black;
 	
-	/* margin-top: 13px; */
-    /* padding: 0px 16px; */
-    /* text-decoration: none; */
-/* } */
+	margin-top: 13px;
+    padding: 0px 16px;
+    text-decoration: none;
+}
 
 .top1_mediaMyPhone:focus ~ .podmenu, 
 .top1_mediaMyPhone:active ~ .podmenu, 
@@ -926,7 +929,7 @@ input:required{
 	
 	position: relative;
 	background: url("../img/footer/footer_phone.png");
-	width: 375px;
+	width: 400px;
 	height: 470px;
 	top: 710px;
 	color: #fff;
@@ -1056,7 +1059,6 @@ input:required{
     font-size: 11px;
 }
 
-}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------Страница Фото--------------------------------------*/
@@ -1175,14 +1177,8 @@ input:required{
 
 /*---------Подвал страницы фото-------------*/
 .footer_photo{
-	position: relative;
-	background: url("../img/footer1.png");
-	height: 310px;
-	top: 60px;
-	color: #fff;
-	/* padding-left: 32%; */
-	text-align: left;
-	font-weight: 400;
+	visibility: hidden;
+	display: none;
 }
 /*---------Черный подвал страницы фото-------------*/
 .black_footer_photo{
@@ -1251,14 +1247,8 @@ input:required{
 
 /*---------Подвал страницы фото дома-------------*/
 .footer_photo_dom{
-	position: relative;
-	background: url("../img/footer1.png");
-	height: 310px;
-	top: 30px;
-	color: #fff;
-	/* padding-left: 32%; */
-	text-align: left;
-	font-weight: 400;
+	visibility: hidden;
+	display: none;
 }
 /*---------Черный подвал страницы фото-------------*/
 .black_footer_photo_dom{
@@ -1271,4 +1261,6 @@ input:required{
 	color: #fff;
 	padding-left: 40px;
 	padding-top: 38px;
+}
+
 }

@@ -268,14 +268,13 @@ hr{
 
 
 /*-----------------------------------------Гамбургер меню--------------------------*/
-
-.podmenu{
-	display: none;
-	 z-index: 10001;
-}
 .hamburger-menu{
 	visibility: hidden;
     display: none;
+}
+.podmenu{
+	display: none;
+	 z-index: 10001;
 }
 .top1_mediaMyPhone{
 	display: block;
@@ -1301,6 +1300,9 @@ input:focus{
 
 /*---------Подвал страницы фото-------------*/
 .footer_photo{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
 	background: url("../img/footer1.png");
 	height: 310px;
@@ -1377,6 +1379,9 @@ input:focus{
 
 /*---------Подвал страницы фото дома-------------*/
 .footer_photo_dom{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
 	background: url("../img/footer1.png");
 	height: 310px;
@@ -1443,6 +1448,9 @@ input:focus{
 
 /*---------Подвал страницы Медицинский уход-------------*/
 .footer_1{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
 	background: url("../img/footer1.png");
 	height: 310px;
