@@ -2,13 +2,17 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="user-scalable=yes"> -->
+	<meta name="viewport" content="width=device-width" content="user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/media320.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/mediaMyPhone.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<title>Дом престарелых "Филипыч"</title>
 	<script src="js/script.js"/>
+	<title>Дом престарелых "Филипыч"</title>
+
 	<!-- /*Адаптив*/ -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- /*Анимация форм*/ -->
@@ -18,9 +22,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- /*Телефон*/ -->
 	<!-- Подключение библиотеки jQuery -->
-	<script src="jquery.js"></script>
+	<script src="js/jquery.js"></script>
 	<!-- Подключение jQuery плагина Masked Input -->
-	<script src="jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 </head>
 <body>
 
@@ -30,11 +34,11 @@
 	</div>
 </div>
 
-	<!-- Шапка -->
+<!-------------- Шапка ------------------->
 <header class="header_">
 		<div class="container">
 			<div class="header_inner">
-				<a href="index.html"><img class="header_item" src="img/logo/logo.png" alt="HTML5"></a>
+				<a href="index.html"><img class="header_item_logo" src="img/logo/logo.png" alt="HTML5"></a>
 				<div class="header_item">
 					<p class="header_text header_text1" >
 						Московская область, Одинцовский<br>район, дер. Марьино, ул. Южная, д.3
@@ -55,6 +59,7 @@
 					</p>
 				</div>					
 			</div>
+			
 			<div class = "strip_header"></div>				
 					<div class="header_text4">
 						Московская область, Одинцовский<br>район, дер. Марьино, ул. Южная, д.3
@@ -91,6 +96,55 @@
 </div>
 </div>
 
+<!--------------------Гамбургер меню------------------>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+	<div class="menu_btn"><img src="img/hamburger-menu/Ellipse.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__btn" for="menu__toggle"></label>
+
+	<ul class="menu__box">
+	
+	<input id="menu__toggle" type="checkbox" />
+	<div class="menu_b"><img src="img/hamburger-menu/close_menu.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__b" for="menu__toggle"></label>
+	
+	<img src="img/hamburger-menu/close_menu.png" class="menu__box_img_close" onclick="myFunction()" alt="HTML5" style="vertical-align: middle;"/>
+		
+		<li><a class="menu__item" href="C:/Users/Admin/Desktop/Diplom/index.html">Главная</a></li>
+		<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/photo.html">Фото</a></li>
+			<li>
+				<a class="top1_mediaMyPhone" href="javascript:void(0);">Услуги▾
+				<div class="podmenu">
+					<div class="sub-menu1_mediaMyPhone"></div>
+						<div class="sub-menu_mediaMyPhone">
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/1.html">Медицинский уход</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/2.html">Пансионат для инвалидов по зрению</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/3.html">Психоневрологический пансионат</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/4.html">Сестринский уход за пожилыми людьми</a>
+						</div>
+				</div>
+				</a>
+			</li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/prices.html">Цены</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/oformlenie.html">Оформление</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/contacts.html">Контакты</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/request.html">Отправить заявку</a></li>		
+   <table>
+		<tr>
+			<td>
+				<div class="menu__box_icon1"><img src="img/hamburger-menu/1.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://www.facebook.com/grandpa.filipych"></a>
+
+				<div class="menu__box_icon2"><img src="img/hamburger-menu/2.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://vk.com/club155151679"></a>
+
+				<div class="menu__box_icon3"><img src="img/hamburger-menu/3.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://ok.ru/filipych"></a>
+			</td>
+		</tr>
+	</table>
+	</ul>
+</div>
 
 <div class = "message_1">
 	<div class="container">
@@ -98,7 +152,18 @@
 		<!-- <img src="img/message_media.png" alt="HTML5" style="vertical-align: middle;" width="320" height="60"/></div> -->
 	</div>
 </div>
-
+<div class = "message_phone">
+	<div class="container">
+		<div class="message_text3">Пансионат для<br>инвалидов по зрению</div>
+		
+		<div class="message_text_media">Пансионат для<br>инвалидов по<br>зрению
+		<img src="img/message_media.png" alt="HTML5" style="vertical-align: middle;" width="320" height="60"/></div>
+		
+		<div class="message_img_phone">
+		<img  src="img/message_media.png" alt="HTML5" style="vertical-align: middle;" width="375" height="70"/></div> 
+		<div class="message_text_phone">Пансионат для<br>инвалидов по зрению</div>
+	</div>
+</div>
 <!-------------------------------1 блок----------------------------->
 
 <div class="_2_services_1">
@@ -106,7 +171,7 @@
 		<table>	
 			<tr>
 				<td>
-					<img src="img/photo_services/1.png" alt="HTML5" style="vertical-align: middle;"/>
+					<img src="img/photo_services/1.png" class="_2_services_desktop" alt="HTML5" style="vertical-align: middle;"/>
 				</td>
 				
 				<td> 
@@ -123,21 +188,28 @@
 <!-------------------------------2 блок - оглавление ----------------------------->
 <div class="_2_services_2">
 	<div class="container">	
-		<img src="img/st.png" alt="HTML5" style="vertical-align: middle;"/>	
+		<img src="img/st.png" class="_2_services_desktop" alt="HTML5" style="vertical-align: middle;"/>	
+		<div class="_2_services_img_phone">
+		<img src="img/st_phone.png" class="_2_services_img_phone" alt="HTML5" style="vertical-align: middle;"/>	</div>
 		<table>	
 			<tr>
 				<td>
 					<div class="_2_services_logo_2">
 						<h4>УСЛОВИЯ ПРОЖИВАНИЯ В</h4>
-					</div>
-						
+					</div>					
 					<div class="_2_services_logo_2-1">
 						<h4>ПАНСИОНАТЕ И УХОД</h4>
 					</div>
+					<div class="_2_services_logo_2_phone">
+						<h4>УСЛОВИЯ<br>ПРОЖИВАНИЯ В<br>ПАНСИОНАТЕ И УХОД</h4>	
+					</div>	
 				</td>
 				<td>
 					<div class="_2_services_logo_3">
 						<h4>ЗА СЛАБОВИДЯЩИМИ ПАЦИЕНТАМИ</h4>
+					</div>
+					<div class="_2_services_logo_3_phone">
+						<h4>ЗА<br>СЛАБОВИДЯЩИМИ<br>ПАЦИЕНТАМИ</h4>	
 					</div>
 				</td>
 			</tr>
@@ -168,7 +240,9 @@
 						</div>
 					</td>
 					<td>
+					<div class="_2_services_desktop">
 						<img class="_2_services_img" src="img/photo_services/2.png" alt="HTML5" style="vertical-align: middle;"/>
+					</div>
 					</td>
 				</tr>			
 			</table>
@@ -179,13 +253,20 @@
 <!--------------------------------------- Блок 4 - оглавление ------------------------------------------->
 <div class="_2_services_4">
 	<div class="container">
-		<img src="img/st.png" alt="HTML5" style="vertical-align: middle;"/>	
+		<img src="img/st.png" class="_2_services_desktop" alt="HTML5" style="vertical-align: middle;"/>	
+		
+		<div class="_2_services_img_phone">
+		<img src="img/st_phone.png" class="_2_services_img_phone" alt="HTML5" style="vertical-align: middle;"/>	</div>
+		
 		<table>	
 			<tr>
 				<td>
 					<div class="_2_services_logo_4">
 						<h4>ИНТЕРНАТ ДЛЯ СЛЕПЫХ В МОСКВЕ</h4>
 					</div>
+					<div class="_2_services_logo_4_phone">
+						<h4>ИНТЕРНАТ ДЛЯ<br>СЛЕПЫХ В МОСКВЕ</h4>	
+					</div>	
 				</td>
 				<td>
 					<div class="_2_services_logo_4-1">
@@ -202,20 +283,25 @@
 		<table>	
 			<tr>
 				<td>
-					<img class="_2_services_img_5" src="img/photo_services/3.png" alt="HTML5" style="vertical-align: middle;"/>
+				<div class="_2_services_desktop">
+					<img class="_2_services_img_5"  src="img/photo_services/3.png" alt="HTML5" style="vertical-align: middle;"/>
+				</div>
 				</td>
 					
 				<td> 
 					<div class="_2_services_text_5-1">
-					<p>В сравнении с бюджетными организациями той же направленности, частные дома для престарелых слепых людей предлагают более комфортабельные условия жизни и высокий уровень медицинского обслуживания.</p></div>
+					В сравнении с бюджетными организациями той же направленности, частные дома для престарелых слепых людей предлагают более комфортабельные условия жизни и высокий уровень медицинского обслуживания.</div>
+					<p></p>
 					<div class="_2_services_text_5-2">
-					<p>Мы не только поможем в случае необходимости физическому здоровью пациента, но и обеспечим моральную и психологическую реабилитацию человека после пережитого заболевания.</p>
+					Мы не только поможем в случае необходимости физическому здоровью пациента, но и обеспечим моральную и психологическую реабилитацию человека после пережитого заболевания.
 					</div>
+					<p></p>
 					<div class="_2_services_text_5-3">
-					<p>В пансионате работают очень чуткие и вежливые сотрудники, которые смогут окружить каждого пожилого человека необходимым ему вниманием и заботой. Мы проявим участие ко всем проблемам слабовидящего пожилого человека, а также организуем его досуг и проведение свободного времени.</p>
+					В пансионате работают очень чуткие и вежливые сотрудники, которые смогут окружить каждого пожилого человека необходимым ему вниманием и заботой. Мы проявим участие ко всем проблемам слабовидящего пожилого человека, а также организуем его досуг и проведение свободного времени.
 					</div>
+					<p></p>
 					<div class="_2_services_text_5-4">
-					<p>Выбирая нашу организацию, Вы выбираете здоровье и счастья для себя и своих близких.</p>
+					Выбирая нашу организацию, Вы выбираете здоровье и счастья для себя и своих близких.
 					</div>
 				</td>
 			</tr>
@@ -223,10 +309,218 @@
 	</div>
 </div>
 
+<!---- Подвал ---->
+<div class = "footer_2">
+<div class="container">		
+		<table width="100%" height="300px">
+			<tr>
+				<th rowspan="3" width="300px" height="297px">
+				
+					<div class = "img_ma">
+					<a href="https://www.instagram.com/moskvina.a_/?hl=rusrc="/>
+					<img src="img/footer/ma.png" alt="HTML5"/></div>
+				</th>
+				<th width="350px">
+					<div class = "TheMainThing_footer">
+						<div class = "text_footer1">Контакты</div></div>
+				</th>
+				<th width="270px">
+					<div class = "TheMainThing_footer">
+						<div class = "text_footer2">Меню</div></div>
+				</th>
+				<th>	
+					<div class = "TheMainThing_footer">
+						<div class = "text_footer3">Мы в соц сетях</div></div>
+				</th>
+			</tr>
+			
+			<tr>
+			<td>
+				<div class = "img_strip">
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
+			</td>
+			<td>
+				<div class = "img_strip">
+					<img src="img/footer/strip.png"alt="HTML5"/></div>
+			</td>
+			<td>
+				<div class = "img_strip">
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
+			</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<table class="contacts_footer">
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/gps.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+								<div class="_">
+								<span style="vertical-align: middle;">Московская область,<br>Одинцовский район, дер.<br>Марьино, ул. Южная, д.3</span></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/phone.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+							<div class="_1">
+								<span style="vertical-align: middle;">Моб: +7 (915) 212-28-19</span></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/1message.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+							<div class="_">
+								<span style="vertical-align: middle;">dom-prestarelyh@bk.ru</span></div>
+								</div>
+							</td>
+						</tr>	
+					</table>
+				</td>
+				<td>
+					<div class = "menu_footer">
+					<div class="menu_footer_anim">
+						<a href="">Цены</a>
+					</div>
+						<p>- - - - - - - - - - - - - - - - - - - - - - -</p>
+					<div class="menu_footer_anim">	
+						<a href="">Оформление</a>
+					</div>	
+						<p>- - - - - - - - - - - - - - - - - - - - - - -</p>
+					<div class="menu_footer_anim">	
+						<a href="">Оставить заявку</a>
+					</div>	
+						<p>- - - - - - - - - - - - - - - - - - - - - - -</p>
+					</div>
+				</td>
+				<td>
+					<div class = "social_footer">
+						<div class="img_icon_footer">
+						<a href="https://www.facebook.com/grandpa.filipych">
+							<img src="img/footer/f_icon.png"/></a>
+						<a href="https://vk.com/club155151679">
+							<img src="img/footer/vk_icon.png"/></a>
+						<a href="https://ok.ru/filipych">
+							<img src="img/footer/o_icon.png"/></a>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
 
+<div class = "footer_2_phone">
+	<div class="container">	
+		<table>
+			<tr>
+				<div class = "img_ma_phone">
+					<a href="https://www.instagram.com/moskvina.a_/?hl=rusrc="></a>
+					<img src="img/footer/ma.png" width="65x" height="76px" alt="HTML5"/></div>
+			</tr>	
+		</table>
+		
+		<table>
+			<tr>
+				<td>
+					<div class = "TheMainThing_footer_phone1">Контакты</div>
+				</td>
+			</tr>
+		</table>
+		<table>	
+			<tr>
+				<td>
+					<div class = "img_strip_phone">
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
+				</td>
+			</tr>
+		</table>
+		
+		<table class="contacts_footer_phone">
+			<tr>		
+				<td>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/gps.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+								<div class="_phone">
+								<span style="vertical-align: middle;">Московская область,<br>Одинцовский район, дер.<br>Марьино, ул. Южная, д.</span></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/phone.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+							<div class="_phone1">
+								<span style="vertical-align: middle;">Моб: +7 (915) 212-28-19</span></div>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/1message.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+							<div class="_phone">
+								<span style="vertical-align: middle;">dom-prestarelyh@bk.ru</span></div>
+								</div>
+							</td>
+						</tr>	
+				</td>
+			</tr>
+		</table>
+		
+		<table>		
+			<tr>
+				<td>
+					<div class = "TheMainThing_footer_phone2">Мы в соц сетях</div></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class = "img_strip1_phone">
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>
+					<div class = "social_footer_phone">
+						<div class="img_icon_footer_phone">
+						<a href="https://www.facebook.com/grandpa.filipych">
+							<img src="img/footer/f_icon.png" width="35x" height="35px"/></a>
+						<a href="https://vk.com/club155151679">
+							<img src="img/footer/vk_icon.png" width="35x" height="35px"/></a>
+						<a href="https://ok.ru/filipych">
+							<img src="img/footer/o_icon.png" width="35x" height="35px"/></a>
+						</div>
+					</div>
+				</td>
+			</tr>	
+		</table>
+	</div>
+</div>
 
-
-
+<div class="black_footer_2">
+	<div class="container">©2020 Частный дом престарелых «Филипыч»</div>
+</div>
 <!---- Доп кнопки ----->
 <!---- Кн поднятия ---->
 <div id="button_up"><img src="img/up.png"/></div>
@@ -295,123 +589,5 @@ var h_hght1 = 0; // высота шапки
      });
     });
 </script>
-
-
-<!---- Подвал ---->
-<div class = "footer_2">
-	<div class="container">		
-		<table width="100%" height="300px">
-			<tr>
-				<th rowspan="3" width="300px" height="297px">
-				
-					<div class = "img_ma">
-					<a href="https://www.instagram.com/moskvina.a_/?hl=rusrc=">
-					<img src="img/ma.png" alt="HTML5"></div>
-				</th>
-				<th width="350px">
-					<div class = "TheMainThing_footer">
-						<div class = "text_footer1">Контакты</div></div>
-				</th>
-				<th width="270px">
-					<div class = "TheMainThing_footer">
-						<div class = "text_footer2">Меню</div></div>
-				</th>
-				<th>	
-					<div class = "TheMainThing_footer">
-						<div class = "text_footer3">Мы в соц сетях</div></div>
-				</th>
-			</tr>
-			
-			<tr>
-			<td>
-				<div class = "img_strip">
-					<img src="img/strip.png" alt="HTML5"></div>
-			</td>
-			<td>
-				<div class = "img_strip">
-					<img src="img/strip.png"alt="HTML5"></div>
-			</td>
-			<td>
-				<div class = "img_strip">
-					<img src="img/strip.png" alt="HTML5"></div>
-			</td>
-			</tr>
-			
-			<tr>
-				<td>
-					<table class="contacts_footer">
-						<tr>
-							<td>
-								<div class="img_footer">
-								<img src="img/gps.png" alt="HTML5" style="vertical-align: middle;"/>
-							</td>
-							<td>
-								<div class="_">
-								<span style="vertical-align: middle;">Московская область,<br>Одинцовский район, дер.<br>Марьино, ул. Южная, д.3</span></div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-							</div>
-								<div class="img_footer">
-								<img src="img/phone.png" alt="HTML5" style="vertical-align: middle;"/>
-							</td>
-							<td>
-							<div class="_1">
-								<span style="vertical-align: middle;">Моб: +7 (915) 212-28-19</span></div>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<div class="img_footer">
-								<img src="img/1message.png" alt="HTML5" style="vertical-align: middle;"/>
-							</td>
-							<td>
-							<div class="_">
-								<span style="vertical-align: middle;">dom-prestarelyh@bk.ru</span></div>
-								</div>
-							</td>
-						</tr>	
-					</table>
-				</td>
-				<td>
-					<div class = "menu_footer">
-					<div class="menu_footer_anim">
-						<a href="">Цены</a>
-					</div>
-						<p>- - - - - - - - - - - - - - - - - - - - - - -</p>
-					<div class="menu_footer_anim">	
-						<a href="">Оформление</a>
-					</div>	
-						<p>- - - - - - - - - - - - - - - - - - - - - - -</p>
-					<div class="menu_footer_anim">	
-						<a href="">Оставить заявку</a>
-					</div>	
-						<p>- - - - - - - - - - - - - - - - - - - - - - -</p>
-					</div>
-				</td>
-				<td>
-					<div class = "social_footer">
-						<div class="img_icon_footer">
-						<a href="https://www.facebook.com/grandpa.filipych">
-							<img src="img/f_icon.png"/></a>
-						<a href="https://vk.com/club155151679">
-							<img src="img/vk_icon.png"/></a>
-						<a href="https://ok.ru/filipych">
-							<img src="img/o_icon.png"/></a>
-						</div>
-					</div>
-				</td>
-			</tr>
-		</table>
-	</div>
-</div>
-
-<div class="black_footer_2">
-	<div class="container">©2020 Частный дом престарелых «Филипыч»</div>
-</div>
-
 </body>
 </html> 

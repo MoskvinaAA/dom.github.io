@@ -587,11 +587,11 @@ hr{
 	
 	color: #fff; /* Цвет текста */
 	text-decoration: none; /* Отменяем подчеркивание у ссылки */
-	/*display: inline-block; */
-	/*text-decoration: none;*/
-	/*outline: none;*/
-	/*border-width: 2px 0;*/
-	/*transition: 0.2s;*/
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	border-width: 2px 0;
+	transition: 0.2s;
 }
 
 .button:hover{
@@ -1187,6 +1187,10 @@ input:focus{
 /*--------------------------------------Страница Фото--------------------------------------*/
 
 /*---------Таблица фото: HOME И GR-------------*/
+.message_phone{
+		visibility: hidden;
+	display: none;
+}
 .photo_table{
 	padding-top: 90px;
 	width: 100%;
@@ -1196,6 +1200,10 @@ input:focus{
 	/* border-spacing: 50px; */
 }
 /*----------------------*/
+.photo_table_phone{
+	visibility: hidden;
+	display: none;
+}
 .photo_table_home{
 	position: relative;
 	width: 100%;
@@ -1299,6 +1307,10 @@ input:focus{
 }
 
 /*---------Подвал страницы фото-------------*/
+.footer_phone_phone{
+	visibility: hidden;
+	display: none;
+}
 .footer_photo{
 	visibility: visible;
 	display: block;
@@ -1328,11 +1340,17 @@ input:focus{
 /*--------------------------------------Страница Фото Дома--------------------------------------*/
 
 .photo_dom_table{
+	visibility: visible;
+	display: block;
+	
 	padding-top: 80px;
 	width: 100%;
 }
+.photo_dom_table_phone{
+	visibility: hidden;
+	display: none;
+}
 /*----------------------*/
-
 .photo_dom_1{
 	position: relative;
 	width: 100%;
@@ -1480,6 +1498,10 @@ input:focus{
 /*---------------------Блок со вставкой оглавления---------------*/
 
 /*---------------------1 блок---------------*/
+._2_services_desktop{
+visibility: visible;
+	display: block;
+}
 ._2_services_1{
 	padding-top: 80px;
 	width: 100%;
@@ -1508,24 +1530,30 @@ input:focus{
 }
 
 ._2_services_logo_2{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
 	color: #754e6a;
 	font-weight: 800;
 	
-	padding-left: 81px;
-	top: 47px;
+	padding-left: 28px;
+	top: 48px;
 	width: 100%;
 }
 ._2_services_logo_2-1{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
 	color: #754e6a;
 	font-weight: 800;
 	
-	padding-left: 109px;
+	padding-left: 28px;
 	top: 71px;
 	width: 100%;
 }
@@ -1540,7 +1568,26 @@ input:focus{
 	top: 58px;
 	width: 100%;
 }
-
+._2_services_logo_2_phone{
+visibility: hidden;
+	display: none;
+}
+._2_services_logo_3_phone{
+visibility: hidden;
+	display: none;
+}
+._2_services_logo_4_phone{
+visibility: hidden;
+	display: none;
+}
+._2_services_img_phone{
+	visibility: hidden;
+	display: none;
+}
+._2_services_logo_4_phone{
+	visibility: hidden;
+	display: none;
+}
 /*---------------------3 блок--------------------*/
 
 ._2_services_3{
@@ -1572,6 +1619,9 @@ input:focus{
 }
 
 ._2_services_logo_4{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -1628,6 +1678,9 @@ input:focus{
 
 /*---------Подвал страницы Медицинский уход-------------*/
 .footer_2{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
 	background: url("../img/footer1.png");
 	height: 310px;
@@ -1636,6 +1689,22 @@ input:focus{
 	/* padding-left: 32%; */
 	text-align: left;
 	font-weight: 400;
+}
+.footer_1_phone{
+visibility: hidden;
+	display: none;
+}
+.footer_2_phone{
+visibility: hidden;
+	display: none;
+}
+.footer_3_phone{
+visibility: hidden;
+	display: none;
+}
+.footer_4_phone{
+visibility: hidden;
+	display: none;
 }
 /*---------Черный подвал страницы Медицинский уход-------------*/
 .black_footer_2{
@@ -1655,6 +1724,9 @@ input:focus{
 
 /*---------------------Блок со вставкой оглавления---------------*/
 .message_1{
+	visibility: visible;
+	display: block;
+	
 	background: url("../img/message4.png");
 	position: relative;
 	top: 50px;
@@ -1667,6 +1739,9 @@ input:focus{
 }
 
 .message_text_1{
+	visibility: visible;
+	display: block;
+	
 	font-size: 40px;
 	color: #fff;
 	font-weight: bold;
@@ -1703,6 +1778,9 @@ input:focus{
 }
 
 ._3_services_logo_2{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -1714,6 +1792,9 @@ input:focus{
 	width: 100%;
 }
 ._3_services_logo_2-1{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -1725,6 +1806,9 @@ input:focus{
 	width: 100%;
 }
 ._3_services_logo_3{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -1737,7 +1821,6 @@ input:focus{
 }
 
 /*---------------------3 блок--------------------*/
-
 ._3_services_3{
 	position: relative;
 	padding-top: 30px;
@@ -1770,6 +1853,9 @@ input:focus{
 }
 
 ._3_services_logo_4{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -1781,6 +1867,9 @@ input:focus{
 	width: 100%;
 }
 ._3_services_logo_4-1{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -1792,6 +1881,9 @@ input:focus{
 	width: 100%;
 }
 ._3_services_logo_5{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -1857,6 +1949,9 @@ input:focus{
 }
 
 ._3_services_logo_6{
+	visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -1892,6 +1987,9 @@ input:focus{
 
 /*---------------------8 блок со вставкой оглавления блока---------------*/
 ._3_services_8{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
 	
 	padding-top: 45px;
@@ -1901,6 +1999,9 @@ input:focus{
 }
 
 ._3_services_logo_8{
+		visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -1912,6 +2013,9 @@ input:focus{
 	width: 100%;
 }
 ._3_services_logo_8-1{
+		visibility: visible;
+	display: block;
+	
 	position: absolute;
 	
 	font-size: 24px;
@@ -2042,6 +2146,9 @@ input:focus{
 
 /*---------Подвал страницы 3-------------*/
 .footer_3{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
 	background: url("../img/footer1.png");
 	height: 310px;
@@ -2148,6 +2255,9 @@ input:focus{
 
 /*---------Подвал страницы 4-------------*/
 .footer_4{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
 	background: url("../img/footer1.png");
 	height: 310px;
@@ -2301,6 +2411,9 @@ input:focus{
 }
 /*---------Подвал страницы фото прайса-------------*/
 .footer_prices{
+		visibility: visible;
+	display: block;
+	
 	position: relative;
 	background: url("../img/footer1.png");
 	height: 310px;
@@ -2598,6 +2711,9 @@ input:focus{
 
 /*---------Подвал страницы оформления-------------*/
 .footer_oformlenie{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
 	background: url("../img/footer1.png");
 	height: 310px;
@@ -2675,6 +2791,9 @@ input:focus{
 
 /*---------Подвал страницы контактов-------------*/
 .footer_contacts{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
 	background: url("../img/footer1.png");
 	height: 310px;
@@ -2694,17 +2813,5 @@ input:focus{
 	padding-left: 40px;
 	padding-top: 38px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
