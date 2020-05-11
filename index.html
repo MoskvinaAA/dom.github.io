@@ -114,7 +114,7 @@
 	<img src="img/hamburger-menu/close_menu.png" class="menu__box_img_close" onclick="myFunction()" alt="HTML5" style="vertical-align: middle;"/>
 		<li><a class="menu__item" href="C:/Users/Admin/Desktop/Diplom/index.html">Главная</a></li>
 		<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/photo.html">Фото</a></li>
-			<li><div class= "top1_mediaMyPhone" href="">Услуги▾
+			<li><a class="top1_mediaMyPhone" href="javascript:void(0);">Услуги▾
 				<div class="sub-menu1_mediaMyPhone"></div>
 					<div class="sub-menu_mediaMyPhone">
 						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/1.html">Медицинский уход</a>
@@ -122,7 +122,7 @@
 						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/3.html">Психоневрологический пансионат</a>
 						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/4.html">Сестринский уход за пожилыми людьми</a>
 					</div>
-				</div>
+				</a>
 			</li>
 			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/prices.html">Цены</a></li>
 			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/oformlenie.html">Оформление</a></li>
@@ -147,19 +147,19 @@
 
 <script>
 $(function() {
-    $('.hamburger-menu > li').click(function(e) { // limit click to children of mainmenue
+    $('.top1_mediaMyPhone > li').click(function(e) { // limit click to children of mainmenue
         var $el = $('ul',this); // element to toggle
-        $('.hamburger-menu > li > ul').not($el).slideUp(); // slide up other elements
+        $('.top1_mediaMyPhone > li > ul').not($el).slideUp(); // slide up other elements
         $el.stop(true, true).slideToggle(400); // toggle element
         return false;
     });
-    $('.hamburger-menu > li > ul > li').click(function(e) {
+    $('.top1_mediaMyPhone > li > ul > li').click(function(e) {
         e.stopPropagation();  // stop events from bubbling from sub menu clicks
     });
 });​
 
-$('.hamburger-menu').find('> li').click(function() {
-    $('.hamburger-menu > li').not(this).find('ul').slideUp();
+$('.top1_mediaMyPhone').find('> li').click(function() {
+    $('.top1_mediaMyPhone > li').not(this).find('ul').slideUp();
     $(this).find('ul').stop(true, true).slideToggle(400);
     return false;
 });​

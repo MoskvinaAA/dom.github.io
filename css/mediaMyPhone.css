@@ -126,52 +126,6 @@ a:active {
 	visibility: hidden;
     display: none;
 }
-.menu {
-	font-size: 20px;
-	height: 70px;
-	text-align: center;		
-}
-#top-menu{
-	display: flex;
-	justify-content: space-evenly;
-	list-style: none;
-	margin: 0px 125px;
-	padding: 0 0 0 0px;
-}
-.menu-main:active{
-	color: red;
-}
-
-/* .top { */
-	/* display: block; */
-	/* padding: 20px 0;	 */
-	/* color: #000000;	 */
-	/* text-decoration: none; */
-/* } */
-/* .top_{ */
-	/* display: block; */
-    /* padding: 20px 0; */
-    /* color: #997A90; */
-    /* text-decoration: none; */
-    /* font-weight: 700; */
-    /* background: 0 0; */
-    /* background: -moz-linear-gradient(top,rgba(0,0,0,0) 0,#000 100%); */
-    /* background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,#000 100%); */
-    /* background: -o-linear-gradient(top,rgba(0,0,0,0) 0,#000 100%); */
-    /* background: -ms-linear-gradient(top,rgba(0,0,0,0) 0,#000 100%); */
-    /* background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000 100%); */
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparent, endColorstr=#000, GradientType=0); */
-    /* background-repeat: repeat-x; */
-    /* background-position: 0 65%; */
-    /* background-size: 1px 1px; */
-/* } */
-
-/* .top:hover { */
-	/* color: #754e6a;	 */
-	/* text-decoration: none; */
-/* } */
-
-
 /*-----------------------------------------Гамбургер меню--------------------------*/
 .hamburger-menu{
 	visibility: visible;
@@ -240,6 +194,15 @@ a:active {
     text-decoration: none;
     display: block;
 }
+
+.top1_mediaMyPhone:focus ~ .sub-menu_mediaMyPhone, 
+.top1_mediaMyPhone:active ~ .sub-menu_mediaMyPhone, 
+.sub-menu_mediaMyPhone:hover 
+{ 
+   display: block; 
+} 
+
+
 /* Show the dropdown menu on hover */
 /* .top1_mediaMyPhone:hover .sub-menu_mediaMyPhone {display: block; transition: .3s; color: #ebe2e8;} */
 /* .top1_mediaMyPhone:hover .sub-menu1_mediaMyPhone {display: block; color: #ebe2e8;}  */
