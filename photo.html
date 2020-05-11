@@ -2,13 +2,18 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="user-scalable=yes"> -->
+	<meta name="viewport" content="user-scalable=no">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/media320.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaMyPhone.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<title>Дом престарелых "Филипыч"</title>
 	<script src="js/script.js"/>
+	<title>Дом престарелых "Филипыч"</title>
+
 	<!-- /*Адаптив*/ -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- /*Анимация форм*/ -->
@@ -18,9 +23,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- /*Телефон*/ -->
 	<!-- Подключение библиотеки jQuery -->
-	<script src="jquery.js"></script>
+	<script src="js/jquery.js"></script>
 	<!-- Подключение jQuery плагина Masked Input -->
-	<script src="jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 </head>
 <body>
 
@@ -91,11 +96,58 @@
 </div>
 </div>
 
+<!--------------------Гамбургер меню------------------>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+	<div class="menu_btn"><img src="img/hamburger-menu/Ellipse.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__btn" for="menu__toggle"></label>
+
+	<ul class="menu__box">
+	<input id="menu__toggle" type="checkbox" />
+	<div class="menu_b"><img src="img/hamburger-menu/close_menu.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__b" for="menu__toggle"></label>
+	<img src="img/hamburger-menu/close_menu.png" class="menu__box_img_close" onclick="myFunction()" alt="HTML5" style="vertical-align: middle;"/>
+		<li><a class="menu__item" href="C:/Users/Admin/Desktop/Diplom/index.html">Главная</a></li>
+		<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/photo.html">Фото</a></li>
+			<li><a class="top1_mediaMyPhone" href="javascript:void(0);">Услуги▾
+				<div class="sub-menu1_mediaMyPhone"></div>
+					<div class="sub-menu_mediaMyPhone">
+						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/1.html">Медицинский уход</a>
+						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/2.html">Пансионат для инвалидов по зрению</a>
+						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/3.html">Психоневрологический пансионат</a>
+						<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/4.html">Сестринский уход за пожилыми людьми</a>
+					</div>
+				</a>
+			</li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/prices.html">Цены</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/oformlenie.html">Оформление</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/contacts.html">Контакты</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/request.html">Отправить заявку</a></li>		
+   <table>
+		<tr>
+			<td>
+				<div class="menu__box_icon1"><img src="img/hamburger-menu/1.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://www.facebook.com/grandpa.filipych"></a>
+
+				<div class="menu__box_icon2"><img src="img/hamburger-menu/2.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://vk.com/club155151679"></a>
+
+				<div class="menu__box_icon3"><img src="img/hamburger-menu/3.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://ok.ru/filipych"></a>
+			</td>
+		</tr>
+	</table>
+	</ul>
+</div>
+
 
 <div class = "message">
 	<div class="container">
 		<div class="message_text">Фото</div>
 		<!-- <img src="img/message_media.png" alt="HTML5" style="vertical-align: middle;" width="320" height="60"/></div> -->
+		<div class="message1_img_phone">
+		<img  src="img/message_media.png" alt="HTML5" style="vertical-align: middle;" width="375" height="70"/></div> 
+		<div class="message1_text_phone">Фото</div>
 	</div>
 </div>
 

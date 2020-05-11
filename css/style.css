@@ -139,11 +139,6 @@ hr{
 
 	background-color: #e5e5e5;
 }
-
-a:active {
-  color: red;
-}
-
 /*-----------------------------------------Меню навигации--------------------------*/
 .menu-main{
 	position: absolute;
@@ -170,7 +165,7 @@ a:active {
 	padding: 0 0 0 0px;
 }
 .menu-main:active{
-	color: red;
+	color: #ebe2e8;
 }
 
 .top_{
