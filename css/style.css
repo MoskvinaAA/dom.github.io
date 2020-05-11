@@ -671,10 +671,39 @@ a:active {
 	visibility: hidden;
     display: none;
 }
+/*------------------- 4 блок -------------------*/
+.message{
+	background: url("../img/message4.png");
+	position: relative;
+	top: 50px;
+	width: 100%;
+	height: 150px;
+	margin: 20px auto;
+	overflow: hidden;
+}
 
+.message_text{
+	font-size: 40px;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	padding-top: 4%;
+}
+.message_text_media{
+	visibility: hidden;
+	display: none;
+}
+.message_img_phone{
+	visibility: hidden;
+	display: none;
+}
+.message_text_phone{
+	visibility: hidden;
+	display: none;
+}
+/*---------------------5 блок - Оставьте сообщение----------*/
 /* form starting stylings ------------------------------- */
 .form{
-	font-family: 'Ubuntu', sans-serif;
 	font-weight: 200;
 	padding-top: 7%;
 	padding-left: 18.5%;
@@ -755,28 +784,7 @@ input:focus{
 	background:#d6c0cf;
 	box-shadow: inset 0 0 0 1px #ffffff;
 }
-/*---------------------5 блок - Оставьте сообщение----------*/
-.message{
-	background: url("../img/message4.png");
-	position: relative;
-	top: 50px;
-	width: 100%;
-	height: 150px;
-	margin: 20px auto;
-	overflow: hidden;
-}
 
-.message_text{
-	font-size: 40px;
-	color: #fff;
-	font-weight: bold;
-	text-align: left;
-	padding-top: 4%;
-}
-.message_text_media{
-	visibility: hidden;
-	display: none;
-}
 /*---------------------Настройка полей формы--------------------------------*/
 .form_box input {
 	display: block;
@@ -920,6 +928,15 @@ input:focus{
 
 
 /*---------------------6 блок - Вакансия----------*/
+.message1_img_phone{
+	visibility: hidden;
+	display: none;
+}
+.message1_text_phone{
+	visibility: hidden;
+	display: none;
+}
+
 .message1{
 	top: 150px;
 	position: relative;
@@ -1011,8 +1028,23 @@ input:focus{
 	text-align: left;
 }
 
-
+.message_text3_phone{
+	visibility: hidden;
+	display: none;
+}
+.message_text5_phone{
+	visibility: hidden;
+	display: none;
+}
 /*---------------------Подвал--------------------------------*/
+.footer_desctop{
+	visibility: visible;
+	display: block;
+}
+.footer_phone{
+	visibility: hidden;
+	display: none;
+}
 .footer{
 	position: relative;
 	background: url("../img/footer1.png");

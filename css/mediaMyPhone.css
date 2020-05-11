@@ -192,7 +192,7 @@ a:active {
 	margin-top: 13px;
     padding: 0px 16px;
     text-decoration: none;
-    display: block;
+    /* display: block; */
 }
 
 .top1_mediaMyPhone:focus ~ .sub-menu_mediaMyPhone, 
@@ -201,7 +201,12 @@ a:active {
 { 
    display: block; 
 } 
-
+.top1_mediaMyPhone:focus ~ .sub-menu1_mediaMyPhone, 
+.top1_mediaMyPhone:active ~ .sub-menu1_mediaMyPhone, 
+.sub-menu1_mediaMyPhone:hover 
+{ 
+   display: block; 
+} 
 
 /* Show the dropdown menu on hover */
 /* .top1_mediaMyPhone:hover .sub-menu_mediaMyPhone {display: block; transition: .3s; color: #ebe2e8;} */
@@ -309,7 +314,7 @@ a:active {
   transition-duration: .25s;
 }
 .menu__item:hover {
-	color: ##997a90;
+	color: #997a90;
 }
 
 .menu__box_img_close{
@@ -472,6 +477,7 @@ a:active {
 	position: relative;
 	background: none;
 	background-size: cover;
+	height: 90px;
 }
 .message_text{
 	visibility: hidden;
@@ -479,6 +485,8 @@ a:active {
 }
 .message_img_phone{
 	position: absolute;
+	visibility: visible;
+	display: block;
 }
 .message_text_phone{
 	visibility: visible;
@@ -507,13 +515,13 @@ a:active {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 200;
 	/* padding-top: 10px; */
-	padding-left: 6%;
+	padding-left: 25px;
 }
 
 .group{
 	position: relative;
 	margin-bottom: 25px;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 /* Подсказка */
@@ -524,19 +532,21 @@ input{
 	padding-top: 3%;
 	padding-bottom: 3%;
 	display: block;
-	width: 500px;
+	width: 300px;
 	border: none;
 	border-bottom: 1px solid #754e6a;
 }
 
 input:focus{
-	font-size: 18px;
+	font-size: 15px;
 	outline: none;
 	color: #000000;
 }
 
 .img_form{
-	padding-left: 90%;
+	/* padding-left: 90%; */
+	visibility: hidden;
+	display: none;
 }
 
 .form_text{
@@ -545,7 +555,7 @@ input:focus{
 
 .mess{
 	font-family: 'Arial', sans-serif;
-	font-size: 17px; 
+	font-size: 15px; 
 	color: #9D9D9D;
 	padding-top: 2%;
 	padding-bottom: 3%;
@@ -553,26 +563,26 @@ input:focus{
 	
 	border: none;
 	border-bottom: 1px solid #754e6a;
-	width: 500px;
+	width: 300px;
 	height: 94px;
 	/* height: 97px; */
 }
 
 .mess:focus{
-	font-size: 18px;
+	font-size: 15px;
 	outline: none;
 	color: #000000;
 }
 
 .button2{
-	font-size: 14px;
+	font-size: 15px;
 	background-color: #754e6a;
 	font-weight: 600;
 	
     position: absolute;
 	border-radius: 10px;
 	padding: 14px 40px;
-	left: 18.5%;	
+	left: 25%;	
 	
 	color: #fff; /* Цвет текста */
 	text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -769,17 +779,43 @@ input:required{
 }
 
 
-
-
-
-/*---------------------6 блок - Вакансия-----------------------------------------------остановилась на "Оставить сообщение"---*/
+/*---------------------6 блок - Вакансия----------------------*/
 .message1{
-	top: 150px;
+	top: 80px;
 	position: relative;
 	
-	background: url("../img/message.png");
+	background: none;
 	background-size: cover;
-	height: 150px;
+	height: 90px;
+}
+.message_text1{
+	visibility: hidden;
+	display: none;
+}
+.message1_img_phone{
+	position: absolute;
+	visibility: visible;
+	display: block;
+}
+.message1_text_phone{
+	visibility: visible;
+	display: block;
+	
+	position: relative;
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+	line-height: 1.1;
+	padding-top: 22px;
+	padding-left: 20px;
+}
+
+.message_text_media{
+	/* visibility: visible; */
+	/* display: block; */
+	visibility: hidden;
+	display: none;
 }
 
 .message2{
@@ -787,7 +823,7 @@ input:required{
 }
 
 .message_text1{
-	font-size: 40px;
+	font-size: 20px;
 	color: #fff;
 	font-weight: bold;
 	text-align: left;
@@ -795,56 +831,86 @@ input:required{
 }
 
 .message_text2{
-	font-size: 40px;
+	font-size: 20px;
 	color: #754e6a;
 	font-weight: bold;
-	padding-top: 9%;
+	padding-top: 40px;
+	padding-left: 20px;
+	text-align: center;
+	width: 310px;
 }
 
 .message_text3{
-	font-size: 18px;
+	visibility: hidden;
+	display: none;
+}
+.message_text3_phone{
+	visibility: visible;
+	display: block;
+	
+	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
-	padding-top: 1%;
+	padding-top: 12px;
+	padding-left: 17px;
+	width: 100%;
 }
-
 .message_text4{
-	font-size: 20px;
+	font-size: 18px;
 	color: #000000;
 	font-weight: bold;
-	padding-top: 1%;
+	padding-top: 20px;
+	padding-left: 12px;
+	text-align: center;
+	width: 350px;
 }
 
 .message_text5{
-	font-size: 18px;
+	visibility: hidden;
+	display: none;
+}
+
+.message_text5_phone{
+	visibility: visible;
+	display: block;
+	
+	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
-	padding-top: 1%;
+	padding-top: 12px;
+	padding-left: 17px;
+	width: 100%;
 }
 
 .photo_girls{
-	padding-top: 33%;
+	visibility: hidden;
+	display: none;
 }
 
 .button1{
-	font-family: 'Arial', sans-serif;
-	font-size: 14px;
+	visibility: hidden;
+	display: none;
+}
+
+.button2_phone{
+	font-size: 15px;
 	background-color: #754e6a;
 	font-weight: 600;
 	
-	/*align-items: center;*/
     position: absolute;
 	border-radius: 10px;
-	padding: 16px 34px;
-	left: 77%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);	
+	padding: 14px 0px;
+	left: 25%;	
+	margin-top: 20px;
 	
 	color: #fff; /* Цвет текста */
 	text-decoration: none; /* Отменяем подчеркивание у ссылки */
+	width: 187px;
 }
 
-.button1:hover{
+.button2_phone:hover{
+	cursor: pointer;
+	
 	color: #754e6a;
 	background:#d6c0cf;
 	box-shadow: inset 0 0 0 1px #ffffff;
@@ -858,21 +924,22 @@ input:required{
 
 /*---------------------Подвал--------------------------------*/
 .footer{
+	visibility: hidden;
+	display: none;
+}
+.footer_phone{
+	visibility: visible;
+	display: block;
+	
 	position: relative;
-	background: url("../img/footer1.png");
-	height: 310px;
-	top: 629px;
+	background: url("../img/footer/footer_phone.png");
+	width: 375px;
+	height: 470px;
+	top: 710px;
 	color: #fff;
 	/* padding-left: 32%; */
 	text-align: left;
 	font-weight: 400;
-}
-
-.TheMainThing_footer{
-	color: #fff;
-	font-size: 23px;
-	/* font-weight: 900; */
-	word-spacing: normal;
 }
 
 .footer_{
@@ -883,14 +950,76 @@ input:required{
 	position: relative;
 	background: black;
 	height: 92px;
-	top: 629px;
+	top: 710px;
 	bottom: 0;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
-	padding-left: 40px;
+	padding-left: 20px;
 	padding-top: 38px;
 }
+/*--------Мое лого--------*/
+.img_ma_phone{
+	padding-top: 20px;
+	padding-left: 240px;
+	  text-decoration: none;
+}
+/*--------Контакты--------*/
+.TheMainThing_footer_phone1{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 900;
+	word-spacing: normal;
+	text-align: center;
+	padding-left: 140px;
+	padding-top: 10px;
+}
 
+.text_footer1{
+	padding-top: 50px;
+	float: left; 
+}
+
+.contacts_footer_phone{
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.6;
+	
+	padding-left: 90px;
+}
+
+.img_footer{
+	font-size: 16px;
+	text-align: left;
+	background-size: 30px 30px;
+}
+
+._phone{
+	padding-left: 8px;
+}
+._phone1{
+	padding-left: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*--------Мы в соц--------*/
+.TheMainThing_footer_phone2{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 900;
+	word-spacing: normal;
+	text-align: center;
+	padding-left: 115px;
+	padding-top: 30px;
+}
+
+.social_footer_phone{
+	padding-bottom: 0px;
+	padding-left: 124px;
+}
+
+.img_icon_footer_phone{
+	padding-bottom: 30%;
+}
 
 /*------------Анимация палок----------*/
 @keyframes move {
@@ -902,8 +1031,9 @@ input:required{
 	}
 }
 
-.img_strip{
-	height:40px;
+.img_strip_phone{
+	padding-left: 130px;
+	height:30px;
 	
 	animation-direction: alternate;
 	animation-duration: 2s;
@@ -911,76 +1041,15 @@ input:required{
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 }
-
-
-/*--------Мое лого--------*/
-.img_ma{
-	padding-top: 114px;
-	padding-left: 70px;
-}
-/* .img_maaa{ */
-	/* padding-top: 100px; */
-	/* padding-left: 50px; */
-/* } */
-/*--------Контакты--------*/
-.text_footer1{
-	padding-top: 50px;
-	float: left; 
-}
-
-.contacts_footer{
-	color: #fff;
-	font-size: 16px;
-	line-height: 1.6;
-}
-
-.img_footer{
-	font-size: 16px;
-	text-align: left;
-	background-size: 30 30;
-}
-/*--------Меню--------*/
-.text_footer2{
-	padding-top: 50px;
-}
-
-.menu_footer{
-	font-size: 16px;
-	line-height: 0;
-	padding: 0px;
-	padding-top: 9px;
-}
-
-.menu_footer_anim a {
-	transition: 2s linear;
-	line-height: 20px;
-	color: #fff;
-	text-decoration: none; /* Отменяем подчеркивание у ссылки */
-}
-
-.menu_footer_anim a:hover {
-    font-size: 20px;
-	transition: 2 linear;
-}
-
-._{
-	padding-left: 4px;
-}
-._1{
-	padding-left: 4px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-/*--------Мы в соц--------*/
-.social_footer{
-	padding-bottom: 10px;
-}
-.text_footer3{
-	padding-top: 50px;
-}
-
-.img_icon_footer{
-	padding-bottom: 30%;
+.img_strip1_phone{
+	padding-left: 126px;
+	height:30px;
+	
+	animation-direction: alternate;
+	animation-duration: 2s;
+	animation-name: move;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 /*--------Кнопка--------*/
 #button_up {
@@ -993,6 +1062,8 @@ input:required{
     font-family: verdana;
     font-size: 11px;
 }
+
 }
+
 @media(min-width: 320) and (max-width: 480){
 }

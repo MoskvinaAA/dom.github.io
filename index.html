@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/media320.css">
 	<link rel="stylesheet" type="text/css" href="css/mediaMyPhone.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<script src="js/script.js"/>
 	<title>Дом престарелых "Филипыч"</title>
@@ -144,26 +145,6 @@
 	</table>
 	</ul>
 </div>
-
-<script>
-$(function() {
-    $('.top1_mediaMyPhone > li').click(function(e) { // limit click to children of mainmenue
-        var $el = $('ul',this); // element to toggle
-        $('.top1_mediaMyPhone > li > ul').not($el).slideUp(); // slide up other elements
-        $el.stop(true, true).slideToggle(400); // toggle element
-        return false;
-    });
-    $('.top1_mediaMyPhone > li > ul > li').click(function(e) {
-        e.stopPropagation();  // stop events from bubbling from sub menu clicks
-    });
-});​
-
-$('.top1_mediaMyPhone').find('> li').click(function() {
-    $('.top1_mediaMyPhone > li').not(this).find('ul').slideUp();
-    $(this).find('ul').stop(true, true).slideToggle(400);
-    return false;
-});​
-</script>
 
 
  <!--------------------- Главный блок --------------------->
@@ -551,6 +532,11 @@ $('.top1_mediaMyPhone').find('> li').click(function() {
 <div class = "message1">
 	<div class="container">
 		<div class="message_text1">Вакансия</div>
+		
+		<div class="message1_img_phone">
+		<img  src="img/message_media.png" alt="HTML5" style="vertical-align: middle;" width="375" height="70"/></div> 
+		<div class="message1_text_phone">Вакансия</div>
+		
 		<table class="table1">
 			<tr>
 			<th>
@@ -562,6 +548,7 @@ $('.top1_mediaMyPhone').find('> li').click(function() {
 				<div class="message2">
 					<div class="message_text2">Ищешь вакансию сиделки?</div>
 					<div class="message_text3">Сиделка — профессия, предполагающая уход за больным<br>человеком, инвалидом, престарелым, утратившим возможность<br>к самообслуживанию. Не требует медицинского образования.</div>
+					<div class="message_text3_phone">Сиделка — профессия, предполагающая уход за больным человеком, инвалидом, престарелым, утратившим возможность к самообслуживанию. Не требует медицинского образования.</div>
 					<div class="message_text4">В обязанности сиделки входит:</div> <a class="button1" href="request.html">Отправить резюме</a> 
 					<div class="message_text5">
 					– контроль за своевременным приемом назначенных<br>медикаментов;<br>
@@ -572,20 +559,26 @@ $('.top1_mediaMyPhone').find('> li').click(function() {
 					– прогулки с подопечным на свежем воздухе;<br> 
 					– оказание психологической помощи подопечному. 
 					</div>
+					<div class="message_text5_phone">
+					– контроль за своевременным приемом назначенных медикаментов;<br>
+					– оказание первой медицинской помощи в случае внезапного ухудшения здоровья больного, травм;<br>
+					– осуществление гигиенических процедур;<br>
+					– профилактика пролежней<br>
+					и пневмонии у лежачих больных;<br> 
+					– прогулки с подопечным на свежем воздухе;<br> 
+					– оказание психологической помощи подопечному. 
 					</div>
-					</th>
+				</div>
+				</th>
 			</tr>
 		</table>
+		<button id="button_message1_phone" class="button2_phone" class="btn_submit disabled" type="submit" value="Отправить">Отправить резюме</button>
 	</div>
 </div>
 
 <!---- Подвал ---->
 <div class = "footer">
-	<div class="container">
-					<!-- <div class = "img_maaa"> -->
-					<!-- <a href="https://www.instagram.com/moskvina.a_/?hl=rusrc="> -->
-					<!-- <img src="img/maaa.png"></a></div> -->
-					
+	<div class="container">		
 		<table width="100%" height="300px">
 			<tr>
 				<th rowspan="3" width="300px" height="297px">
@@ -639,7 +632,6 @@ $('.top1_mediaMyPhone').find('> li').click(function() {
 						</tr>
 						<tr>
 							<td>
-							</div>
 								<div class="img_footer">
 								<img src="img/footer/phone.png" alt="HTML5" style="vertical-align: middle;"/>
 							</td>
@@ -695,6 +687,103 @@ $('.top1_mediaMyPhone').find('> li').click(function() {
 	</div>
 </div>
 
+<div class = "footer_phone">
+	<div class="container">	
+		<table>
+			<tr>
+				<div class = "img_ma_phone">
+					<a href="https://www.instagram.com/moskvina.a_/?hl=rusrc="></a>
+					<img src="img/footer/ma.png" width="65x" height="76px" alt="HTML5"/></div>
+			</tr>	
+		</table>
+		
+		<table>
+			<tr>
+				<td>
+					<div class = "TheMainThing_footer_phone1">Контакты</div>
+				</td>
+			</tr>
+		</table>
+		<table>	
+			<tr>
+				<td>
+					<div class = "img_strip_phone">
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
+				</td>
+			</tr>
+		</table>
+		
+		<table class="contacts_footer_phone">
+			<tr>		
+				<td>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/gps.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+								<div class="_phone">
+								<span style="vertical-align: middle;">Московская область,<br>Одинцовский район, дер.<br>Марьино, ул. Южная, д.</span></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/phone.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+							<div class="_phone1">
+								<span style="vertical-align: middle;">Моб: +7 (915) 212-28-19</span></div>
+									</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/1message.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+							<div class="_phone">
+								<span style="vertical-align: middle;">dom-prestarelyh@bk.ru</span></div>
+								</div>
+							</td>
+						</tr>	
+				</td>
+			</tr>
+		</table>
+		
+		<table>		
+			<tr>
+				<td>
+					<div class = "TheMainThing_footer_phone2">Мы в соц сетях</div></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class = "img_strip1_phone">
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>
+					<div class = "social_footer_phone">
+						<div class="img_icon_footer_phone">
+						<a href="https://www.facebook.com/grandpa.filipych">
+							<img src="img/footer/f_icon.png" width="35x" height="35px"/></a>
+						<a href="https://vk.com/club155151679">
+							<img src="img/footer/vk_icon.png" width="35x" height="35px"/></a>
+						<a href="https://ok.ru/filipych">
+							<img src="img/footer/o_icon.png" width="35x" height="35px"/></a>
+						</div>
+					</div>
+				</td>
+			</tr>	
+		</table>
+	</div>
+</div>
 <div class="black_footer">
 	<div class="container">©2020 Частный дом престарелых «Филипыч»
 	</div>
