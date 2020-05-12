@@ -1,6 +1,6 @@
 /*--------Адаптив главной--------*/
 
-@media(min-width: 321px) and (max-width: 400px){
+@media(min-width: 321px) and (max-width: 375px){
 
 body {
 	width: 100%;
@@ -30,6 +30,11 @@ th{
 }
 table{
 	border-spacing: 0px 1px;
+}
+.otstup_phone{
+	visibility: visible;
+	display: block;
+	margin-bottom: 30px;
 }
 /*---------------------------------Container-----------------------------------*/
 .container{
@@ -203,7 +208,12 @@ hr{
 { 
    display: block; 
 } 
-
+.podmenu:focus ~ .top1_mediaMyPhone, 
+.podmenu:active ~ .top1_mediaMyPhone, 
+.top1_mediaMyPhone:hover 
+{ 
+   display: block; 
+} 
 /* Show the dropdown menu on hover */
 /* .top1_mediaMyPhone:hover .sub-menu_mediaMyPhone {display: block; transition: .3s; color: #ebe2e8;} */
 /* .top1_mediaMyPhone:hover .sub-menu1_mediaMyPhone {display: block; color: #ebe2e8;}  */
@@ -1553,44 +1563,31 @@ visibility: hidden;
 .message_1{
 	visibility: hidden;
 	display: none;
-	
-	background: url("../img/message4.png");
-	position: relative;
-	top: 50px;
-	width: 100%;
-	height: 150px;
-	margin: 20px auto;
-	overflow: hidden;
-	
-	line-height: 1.3;
 }
 
 .message_text_1{
 	visibility: hidden;
 	display: none;
-	
-	font-size: 40px;
-	color: #fff;
-	font-weight: bold;
-	text-align: left;
-	padding-top: 2%;
 }
 
 /*---------------------1 блок---------------*/
 ._3_services_1{
-	padding-top: 70px;
+	padding-top: 30px;
 	width: 100%;
+	padding-right: 20px;
 }
 ._3_services_text_1{
 	width: 100%;
-	
-	padding-left: 30px;
+	font-size: 14px;
+	padding-left: 0px;
 }
 ._3_services_text_1_0{
-	width: 900;
-	padding-right: 45px;
+	width: 355px;
+	padding-right: 0px;
 	
 	text-align:justify;
+		padding-left: 20px;
+	padding-right: 20px;
 }
 
 /*---------------------2 блок со вставкой оглавления блока---------------*/
@@ -1605,6 +1602,8 @@ visibility: hidden;
 }
 
 ._3_services_logo_2{
+	visibility: hidden;
+	display: none;
 	position: absolute;
 	
 	font-size: 24px;
@@ -1616,6 +1615,8 @@ visibility: hidden;
 	width: 100%;
 }
 ._3_services_logo_2-1{
+	visibility: hidden;
+	display: none;
 	position: absolute;
 	
 	font-size: 24px;
@@ -1627,6 +1628,8 @@ visibility: hidden;
 	width: 100%;
 }
 ._3_services_logo_3{
+	visibility: hidden;
+	display: none;
 	position: absolute;
 	
 	font-size: 24px;
