@@ -1,6 +1,6 @@
 /*--------Адаптив главной--------*/
 
-@media(min-width: 321px) and (max-width: 400px){
+@media(min-width: 321px) and (max-width: 420px){
 
 body {
 	width: 100%;
@@ -71,7 +71,7 @@ hr{
 
 .header_item_logo{
 	width: 180px;
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 .header_text{
@@ -113,11 +113,11 @@ hr{
 	width: 311px;
 	line-height: 1;
 	padding-top: 6px;
-	padding-left: 52px;
+	padding-left: 65px;
 }
 
 .header_text_image{
-	left: 12px;
+	left: 15px;
 	width: 30px; 
 	height: 30px;
 }
@@ -844,9 +844,9 @@ input:required{
 	color: #754e6a;
 	font-weight: bold;
 	padding-top: 40px;
-	padding-left: 20px;
+	padding-left: 10px;
 	text-align: center;
-	width: 310px;
+	width: 100%;
 }
 
 .message_text3{
@@ -861,17 +861,19 @@ input:required{
 	color: #000000;
 	font-weight: 400;
 	padding-top: 12px;
-	padding-left: 17px;
-	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+	width: 400px;
 }
 .message_text4{
 	font-size: 18px;
 	color: #000000;
 	font-weight: bold;
 	padding-top: 20px;
-	padding-left: 12px;
+	padding-left: 10px;
 	text-align: center;
-	width: 350px;
+	width: 400px;
 }
 
 .message_text5{
@@ -882,13 +884,14 @@ input:required{
 .message_text5_phone{
 	visibility: visible;
 	display: block;
-	
+	text-align: justify;
 	font-size: 16px;
 	color: #000000;
 	font-weight: 400;
 	padding-top: 12px;
-	padding-left: 17px;
-	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 400px;
 }
 
 .photo_girls{
@@ -1107,7 +1110,7 @@ input:required{
 	
 	position: relative;
 	width: 100%;
-	margin-left: 5px;
+	margin-left: 10px;
 	
 	width: 360px;
 	height: 290px;
@@ -1119,7 +1122,7 @@ input:required{
 }
  
 .photo_table_home .photo_table_home_bg{
-	margin-left: 5px;
+	margin-left: 10px;
 	position: absolute;
 	background: #fdeef8a6;
 	width: 100%;
@@ -1145,7 +1148,7 @@ input:required{
 /*----------------------*/
 .photo_table_gr{
 	position: relative;
-	margin-left: 5px;
+	margin-left: 10px;
 	
 	width: 360px;
 	height: 290px;
@@ -1160,7 +1163,7 @@ input:required{
 }
 
 .photo_table_gr .photo_table_gr_bg{
-	margin-left: 5px;
+	margin-left: 10px;
 	
 	position: absolute;
 	background: #fdeef8a6;
@@ -1236,10 +1239,102 @@ input:required{
 	display: block;
 	
 	padding-top: 60px;
-	padding-left: 20px;
+	padding-left: 30px;
 	width: 100%;
 }
+.photo_dom_1{
+	position: relative;
+	
+	height: 360px;
+	width: 400px;
+	
+	display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+	
+	border-right: 30px solid #fff;
+	border-bottom: 35px solid #fff;
+}
+.photo_dom_2{
+	position: relative;
+	width: 100%;
+	
+	height: 360px;
+	width: 400px;
+	
+	display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+	
+	border-left: 0px solid #fff;
+	border-right: 10px solid #fff;
+	border-bottom: 35px solid #fff;
+}
+.photo_dom_3{
+	position: relative;
+	width: 100%;
+	
+	height: 360px;
+	width: 400px;
+	
+	display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+	
+	border-left: 0px solid #fff;
+	border-bottom: 35px solid #fff;
+}
 
+/*---------Подвал страницы фото дома-------------*/
+.footer_photo_dom{
+	visibility: visible;
+	display: block;
+	
+	position: relative;
+	background: url("../img/footer1.png");
+	height: 310px;
+	top: 30px;
+	color: #fff;
+	/* padding-left: 32%; */
+	text-align: left;
+	font-weight: 400;
+}
+/*---------Черный подвал страницы фото-------------*/
+.footer_photo_dom{
+	visibility: hidden;
+	display: none;
+}
+.footer_dom_phone{
+	visibility: visible;
+	display: block;
+	
+	position: relative;
+	background: url("../img/footer/footer_phone.png");
+	width: 400px;
+	height: 470px;
+	top: 40px;
+	color: #fff;
+	/* padding-left: 32%; */
+	text-align: left;
+	font-weight: 400;
+}
+
+.footer_{
+	padding-left: 40%;
+}
+
+/*---------Черный подвал страницы фото-------------*/
+.black_footer_dom_photo{
+	visibility: visible;
+	display: block;
+	
+	position: relative;
+	background: black;
+	height: 92px;
+	top: 40px;
+	bottom: 0;
+	font-size: 14px;
+	color: #fff;
+	padding-left: 20px;
+	padding-top: 38px;
+}
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------Страница Услуг----------------------------------------*/
 .message_text_phone3{
@@ -1260,6 +1355,7 @@ input:required{
 	width: 100%;
 	padding-left: 20px;
 	padding-right: 20px;
+	text-align: justify;
 }
 
 .medical_care_text{
@@ -2425,7 +2521,7 @@ visibility: hidden;
 
 .oformlenie{
 	padding-top: 60px;
-	width: 375px;
+	width: 100%;
 	
 	padding-left: 20px;
 	padding-right: 20px;
