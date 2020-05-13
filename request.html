@@ -2,13 +2,17 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="user-scalable=yes"> -->
+	<meta name="viewport" content="width=device-width" content="user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/media320.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/mediaMyPhone.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<title>Дом престарелых "Филипыч"</title>
 	<script src="js/script.js"/>
+	<title>Дом престарелых "Филипыч"</title>
+
 	<!-- /*Адаптив*/ -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<!-- /*Анимация форм*/ -->
@@ -18,9 +22,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- /*Телефон*/ -->
 	<!-- Подключение библиотеки jQuery -->
-	<script src="jquery.js"></script>
+	<script src="js/jquery.js"></script>
 	<!-- Подключение jQuery плагина Masked Input -->
-	<script src="jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 </head>
 <body>
 
@@ -69,28 +73,77 @@
 	<div class="container">
 		<nav class="menu">
 			<ul id="top-menu">
-				<li><a class= "top_" href="index.html">Главная</a></li>
-				<li><a class= "top_" href="photo.html">Фото</a></li>
+				<li><a class= "top_" href="C:/Users/Admin/Desktop/Diplom/index.html">Главная</a></li>
+				<li><a class= "top_" href="C:/Users/Admin/Desktop/Diplom/photo.html">Фото</a></li>
 				<li><div class= "top1" href="">Услуги▾
 					<div class="sub-menu1"></div>
 						<div class="sub-menu">
-							<a class= "top_0" href="1.html">Медицинский уход</a>
-							<a class= "top_0" href="2.html">Пансионат для инвалидов по зрению</a>
-							<a class= "top_0" href="3.html">Психоневрологический пансионат</a>
-							<a class= "top_0" href="4.html">Сестринский уход за пожилыми людьми</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/1.html">Медицинский уход</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/2.html">Пансионат для инвалидов по зрению</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/3.html">Психоневрологический пансионат</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/4.html">Сестринский уход за пожилыми людьми</a>
 						</div>
 					</div>
 				</li>
-				<li><a class= "top_" href="prices.html">Цены</a></li>
-				<li><a class= "top_" href="oformlenie.html">Оформление</a></li>
-				<li><a class= "top_" href="contacts.html">Контакты</a></li>
-				<li><a class="active-button" href="request.html">Отправить заявку</a></li>
+				<li><a class= "top_" href="C:/Users/Admin/Desktop/Diplom/prices.html">Цены</a></li>
+				<li><a class= "top_" href="C:/Users/Admin/Desktop/Diplom/oformlenie.html">Оформление</a></li>
+				<li><a class= "top_" href="C:/Users/Admin/Desktop/Diplom/contacts.html">Контакты</a></li>
+				<li><a class="active-button" href="C:/Users/Admin/Desktop/Diplom/request.html">Отправить заявку</a></li>
 			</ul>
 		</nav>
 	</div>	
 </div>
 </div>
 
+<!--------------------Гамбургер меню------------------>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+	<div class="menu_btn"><img src="img/hamburger-menu/Ellipse.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__btn" for="menu__toggle"></label>
+
+	<ul class="menu__box">
+	
+	<input id="menu__toggle" type="checkbox" />
+	<div class="menu_b"><img src="img/hamburger-menu/close_menu.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__b" for="menu__toggle"></label>
+	
+	<img src="img/hamburger-menu/close_menu.png" class="menu__box_img_close" onclick="myFunction()" alt="HTML5" style="vertical-align: middle;"/>
+		
+		<li><a class="menu__item" href="C:/Users/Admin/Desktop/Diplom/index.html">Главная</a></li>
+		<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/photo.html">Фото</a></li>
+			<li>
+				<a class="top1_mediaMyPhone" href="javascript:void(0);">Услуги▾
+				<div class="podmenu">
+					<div class="sub-menu1_mediaMyPhone"></div>
+						<div class="sub-menu_mediaMyPhone">
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/1.html">Медицинский уход</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/2.html">Пансионат для инвалидов по зрению</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/3.html">Психоневрологический пансионат</a>
+							<a class= "top_0" href="C:/Users/Admin/Desktop/Diplom/4.html">Сестринский уход за пожилыми людьми</a>
+						</div>
+				</div>
+				</a>
+			</li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/prices.html">Цены</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/oformlenie.html">Оформление</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/contacts.html">Контакты</a></li>
+			<li><a class= "menu__item" href="C:/Users/Admin/Desktop/Diplom/request.html">Отправить заявку</a></li>		
+   <table>
+		<tr>
+			<td>
+				<div class="menu__box_icon1"><img src="img/hamburger-menu/1.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://www.facebook.com/grandpa.filipych"></a>
+
+				<div class="menu__box_icon2"><img src="img/hamburger-menu/2.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://vk.com/club155151679"></a>
+
+				<div class="menu__box_icon3"><img src="img/hamburger-menu/3.png" alt="HTML5" style="vertical-align: middle;"/></div>
+				<a href="https://ok.ru/filipych"></a>
+			</td>
+		</tr>
+	</table>
+	</ul>
+</div>
 
 <div class = "message">
 	<div class="container">
@@ -377,14 +430,14 @@ var h_hght1 = 0; // высота шапки
 
 <!---- Подвал ---->
 <div class = "footer_prices">
-	<div class="container">		
+<div class="container">		
 		<table width="100%" height="300px">
 			<tr>
 				<th rowspan="3" width="300px" height="297px">
 				
 					<div class = "img_ma">
-					<a href="https://www.instagram.com/moskvina.a_/?hl=rusrc=">
-					<img src="img/ma.png" alt="HTML5"></div>
+					<a href="https://www.instagram.com/moskvina.a_/?hl=rusrc="/>
+					<img src="img/footer/ma.png" alt="HTML5"/></div>
 				</th>
 				<th width="350px">
 					<div class = "TheMainThing_footer">
@@ -403,15 +456,15 @@ var h_hght1 = 0; // высота шапки
 			<tr>
 			<td>
 				<div class = "img_strip">
-					<img src="img/strip.png" alt="HTML5"></div>
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
 			</td>
 			<td>
 				<div class = "img_strip">
-					<img src="img/strip.png"alt="HTML5"></div>
+					<img src="img/footer/strip.png"alt="HTML5"/></div>
 			</td>
 			<td>
 				<div class = "img_strip">
-					<img src="img/strip.png" alt="HTML5"></div>
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
 			</td>
 			</tr>
 			
@@ -421,7 +474,7 @@ var h_hght1 = 0; // высота шапки
 						<tr>
 							<td>
 								<div class="img_footer">
-								<img src="img/gps.png" alt="HTML5" style="vertical-align: middle;"/>
+								<img src="img/footer/gps.png" alt="HTML5" style="vertical-align: middle;"/>
 							</td>
 							<td>
 								<div class="_">
@@ -431,9 +484,8 @@ var h_hght1 = 0; // высота шапки
 						</tr>
 						<tr>
 							<td>
-							</div>
 								<div class="img_footer">
-								<img src="img/phone.png" alt="HTML5" style="vertical-align: middle;"/>
+								<img src="img/footer/phone.png" alt="HTML5" style="vertical-align: middle;"/>
 							</td>
 							<td>
 							<div class="_1">
@@ -444,7 +496,7 @@ var h_hght1 = 0; // высота шапки
 						<tr>
 							<td>
 								<div class="img_footer">
-								<img src="img/1message.png" alt="HTML5" style="vertical-align: middle;"/>
+								<img src="img/footer/1message.png" alt="HTML5" style="vertical-align: middle;"/>
 							</td>
 							<td>
 							<div class="_">
@@ -474,11 +526,11 @@ var h_hght1 = 0; // высота шапки
 					<div class = "social_footer">
 						<div class="img_icon_footer">
 						<a href="https://www.facebook.com/grandpa.filipych">
-							<img src="img/f_icon.png"/></a>
+							<img src="img/footer/f_icon.png"/></a>
 						<a href="https://vk.com/club155151679">
-							<img src="img/vk_icon.png"/></a>
+							<img src="img/footer/vk_icon.png"/></a>
 						<a href="https://ok.ru/filipych">
-							<img src="img/o_icon.png"/></a>
+							<img src="img/footer/o_icon.png"/></a>
 						</div>
 					</div>
 				</td>
