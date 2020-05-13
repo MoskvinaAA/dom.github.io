@@ -964,11 +964,15 @@ input:required{
 .footer_{
 	padding-left: 40%;
 }
-
+.black_width{
+	visibility: visible;
+	display: block;
+	
+	width: 400px;
+}
 .black_footer{
 	position: relative;
 	background: black;
-	width: 100%;
 	height: 92px;
 	top: 689px;
 	bottom: 0;
@@ -1227,7 +1231,7 @@ input:required{
 .black_footer_photo{
 	visibility: visible;
 	display: block;
-	width: 100%;
+
 	position: relative;
 	background: black;
 	height: 92px;
@@ -1335,7 +1339,7 @@ input:required{
 .black_footer_dom_photo{
 	visibility: visible;
 	display: block;
-	width: 100%;
+
 	position: relative;
 	background: black;
 	height: 92px;
@@ -1439,7 +1443,6 @@ input:required{
 	color: #fff;
 	padding-left: 20px;
 	padding-top: 38px;
-	width: 100%;
 }
 
 
@@ -1666,7 +1669,6 @@ visibility: hidden;
 	color: #fff;
 	padding-left: 40px;
 	padding-top: 38px;
-	width: 100%;
 }
 
 
@@ -2219,7 +2221,6 @@ visibility: hidden;
 	color: #fff;
 	padding-left: 40px;
 	padding-top: 38px;
-	width: 100%;
 }
 
 
@@ -2430,7 +2431,6 @@ visibility: hidden;
 	color: #fff;
 	padding-left: 40px;
 	padding-top: 38px;
-	width: 100%;
 }
 
 
@@ -2598,7 +2598,6 @@ visibility: hidden;
 	color: #fff;
 	padding-left: 40px;
 	padding-top: 38px;
-	width: 100%;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -3036,7 +3035,6 @@ visibility: hidden;
 	color: #fff;
 	padding-left: 40px;
 	padding-top: 38px;
-	width: 100%;
 }
 
 
@@ -3132,7 +3130,6 @@ visibility: visible;
 	color: #fff;
 	padding-left: 40px;
 	padding-top: 38px;
-	width: 100%;
 }
 
 
