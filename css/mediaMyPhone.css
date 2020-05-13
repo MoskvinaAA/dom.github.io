@@ -100,10 +100,10 @@ hr{
 }
 
 .strip_header{
-	width: 250px;
+	width: 257px;
 	height: 3px;
 	background: #754e6a;
-	left: 34%;
+	left: 33%;
 	position: relative;
 }
 
@@ -113,7 +113,7 @@ hr{
 	
 	text-align: center;
 	font-weight: 400;
-	width: 320px;
+	width: 324px;
 	line-height: 1;
 	padding-top: 6px;
 	padding-left: 65px;
@@ -399,11 +399,11 @@ hr{
 	z-index: 1000;
     visibility: visible;
     display: block;
-    font-size: 16px;
+    font-size: 15px;
     background-color: #754e6a;
     font-weight: 700;
-    width: 200px;
-    height: 50px;
+    width: 187px;
+    height: 49px;
     text-align: center;
     padding: 13px 20px;
     position: absolute;
@@ -421,7 +421,7 @@ hr{
 }
 /*---------------------2 блок-----------------------*/
 .dom{
-	padding-top:34%;
+	padding-top:32%;
 }
 
 .heading{
@@ -484,7 +484,7 @@ hr{
 	font-size: 16px;
 	
 	text-align: justify;
-	padding-right: 10px;
+	padding-right: 5px;
 }
 
 /*------------------- 4 блок -------------------*/
@@ -597,8 +597,8 @@ input:focus{
 	
     position: absolute;
 	border-radius: 10px;
-	padding: 14px 40px;
-	left: 25%;	
+	padding: 14px 25px;
+	left: 30%;	
 	
 	color: #fff; /* Цвет текста */
 	text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -851,7 +851,7 @@ input:required{
 	color: #754e6a;
 	font-weight: bold;
 	padding-top: 40px;
-	padding-left: 10px;
+	padding-left: 0px;
 	text-align: center;
 	width: 100%;
 }
@@ -868,7 +868,7 @@ input:required{
 	color: #000000;
 	font-weight: 400;
 	padding-top: 12px;
-	padding-left: 20px;
+	padding-left: 10px;
 	padding-right: 20px;
 	text-align: justify;
 	width: 400px;
@@ -878,7 +878,7 @@ input:required{
 	color: #000000;
 	font-weight: bold;
 	padding-top: 20px;
-	padding-left: 10px;
+	padding-left: 0px;
 	text-align: center;
 	width: 400px;
 }
@@ -920,7 +920,7 @@ input:required{
 	border-radius: 10px;
 	padding: 14px 0px;
 	left: 25%;	
-	margin-top: 20px;
+	margin-top: 30px;
 	
 	color: #fff; /* Цвет текста */
 	text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -952,9 +952,9 @@ input:required{
 	
 	position: relative;
 	background: url("../img/footer/footer_phone.png");
-	width: 100%;
-	height: 470px;
-	top: 710px;
+	/* width: 100%; */
+	/* height: 470px; */
+	top: 690px;
 	color: #fff;
 	/* padding-left: 32%; */
 	text-align: left;
@@ -969,7 +969,7 @@ input:required{
 	position: relative;
 	background: black;
 	height: 92px;
-	top: 710px;
+	top: 690px;
 	bottom: 0;
 	font-size: 14px;
 	color: #fff;
