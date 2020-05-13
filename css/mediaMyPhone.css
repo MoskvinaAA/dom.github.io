@@ -979,8 +979,8 @@ input:required{
 /*--------Мое лого--------*/
 .img_ma_phone{
 	padding-top: 20px;
-	padding-left: 250px;
-	  text-decoration: none;
+	padding-left: 260px;
+	text-decoration: none;
 }
 /*--------Контакты--------*/
 .TheMainThing_footer_phone1{
@@ -989,7 +989,7 @@ input:required{
 	font-weight: 900;
 	word-spacing: normal;
 	text-align: center;
-	padding-left: 140px;
+	padding-left: 158px;
 	padding-top: 10px;
 }
 
@@ -1003,7 +1003,7 @@ input:required{
 	font-size: 14px;
 	line-height: 1.6;
 	
-	padding-left: 90px;
+	padding-left: 103px;
 }
 
 .img_footer{
@@ -1027,13 +1027,13 @@ input:required{
 	font-weight: 900;
 	word-spacing: normal;
 	text-align: center;
-	padding-left: 115px;
+	padding-left: 130px;
 	padding-top: 30px;
 }
 
 .social_footer_phone{
 	padding-bottom: 0px;
-	padding-left: 124px;
+	padding-left: 148px;
 }
 
 .img_icon_footer_phone{
@@ -1051,7 +1051,8 @@ input:required{
 }
 
 .img_strip_phone{
-	padding-left: 130px;
+	/* padding-left: 130px; */
+	padding-left: 144px;
 	height:30px;
 	
 	animation-direction: alternate;
@@ -1061,7 +1062,7 @@ input:required{
 	animation-timing-function: linear;
 }
 .img_strip1_phone{
-	padding-left: 126px;
+	padding-left: 144px;
 	height:30px;
 	
 	animation-direction: alternate;
@@ -1094,6 +1095,8 @@ input:required{
 .message_phone{
 	visibility: visible;
 	display: block;
+	
+	margin-top: 10px;
 }
 .photo_table{
 	visibility: hidden;
@@ -1221,8 +1224,8 @@ input:required{
 
 /*---------Черный подвал страницы фото-------------*/
 .black_footer_photo{
-	visibility: hidden;
-	display: none;
+	visibility: visible;
+	display: block;
 	
 	position: relative;
 	background: black;
@@ -1681,7 +1684,7 @@ visibility: hidden;
 ._3_services_1{
 	padding-top: 30px;
 	width: 100%;
-	padding-right: 20px;
+	padding-right: 0px;
 }
 ._3_services_text_1{
 	width: 100%;
@@ -1689,8 +1692,7 @@ visibility: hidden;
 	padding-left: 0px;
 }
 ._3_services_text_1_0{
-	width: 355px;
-	padding-right: 0px;
+	width: 100%;
 	
 	text-align:justify;
 		padding-left: 20px;
@@ -1762,9 +1764,9 @@ visibility: hidden;
 ._3_services_text_3_3{
 	position: relative;
 	padding-top: 10px;
-	padding-right: 30px;
+	padding-right: 20px;
 	
-	width: 355px;
+	width: 100%;
 }
 ._3_services_text_2{
 	padding-top: 10px;
@@ -1877,7 +1879,7 @@ visibility: hidden;
 	display: block;
 	
 	padding-top: 10px;
-	padding-left: 15px;
+	padding-left: 40px;
 }
 /*---------------------6 блок со вставкой оглавления блока---------------*/
 ._3_services_6{
@@ -1926,7 +1928,7 @@ visibility: hidden;
 ._3_services_text_7_1{
 	position: relative;
 	
-	padding-right: 30px;
+	padding-right: 0px;
 	
 	width: 345px;
 }
@@ -1997,7 +1999,7 @@ visibility: hidden;
 	padding-top: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
-	width: 350px;
+	width: 100%;
 	text-align:justify;
 }
 ._3_services_text_9{
@@ -2005,7 +2007,7 @@ visibility: hidden;
 	display: none;
 	position: relative;
 	
-	padding-right: 45px;
+	padding-right: 0px;
 	
 	width: 1000px;
 }
@@ -2230,7 +2232,8 @@ visibility: hidden;
 	display: block;
 	
 	padding-top: 20px;
-	padding-left: 15px;
+	padding-left: 35px;
+
 }
 ._4_services_1{
 	padding-top: 40px;
@@ -2243,12 +2246,11 @@ visibility: hidden;
 	padding-left: 0px;
 }
 ._4_services_text_1_0{
-	width: 355px;
-	padding-right: 0px;
+	width: 100%;
 	
 	text-align:justify;
-		padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 20px;
+	padding-right: 0px;
 }
 /*---------------------2 блок со вставкой оглавления блока---------------*/
 
@@ -2450,7 +2452,7 @@ visibility: hidden;
 	text-align: center;
 	
 	width: 360px;
-	height: 628px;
+	height: 595px;
 
 	background: #FAF2F7;
 	border: 1px solid #754E6A;
@@ -2460,11 +2462,11 @@ visibility: hidden;
 }
 .prices2{
 	margin-top: 20px;
-	padding-top: 0px;
+	padding-top: 40px;
 	text-align: center;
 	
 	width: 360px;
-	height: 628px;
+	height: 595px;
 
 	background: #FFFFFF;
 	border: 1px solid #754E6A;
@@ -2481,7 +2483,7 @@ visibility: hidden;
 	text-align: center;
 	
 	width: 360px;
-	height: 628px;
+	height: 595px;
 
 	background: #FAF2F7;
 	border: 1px solid #754E6A;
@@ -2493,7 +2495,7 @@ visibility: hidden;
 .prices_zag{
 	font-size: 30px;
 	color: #754E6A;
-	font-weight: 900;
+	font-weight: 600;
 }
 
 .prices_1_1{
@@ -2559,7 +2561,7 @@ visibility: hidden;
 	padding-top: 20px;
 }
 .prices1_button_prices_2{
-	padding-top: 40px;
+	padding-top: 20px;
 }
 /*---------Подвал страницы Цены-------------*/
 .footer_prices{
@@ -2667,7 +2669,8 @@ visibility: hidden;
 	position: relative;
 	padding-top: 30px;
 	padding-left: 20px;
-	width: 350px;
+	padding-right: 20px;
+	width: 100%;
 	text-align:justify;
 }
 
@@ -2762,7 +2765,9 @@ visibility: hidden;
 }
 .oformlenie_text_3{
 	padding-top: 30px;
-	padding-left: 20px;
+	padding-left: 20px;	
+	padding-right: 20px;
+	width: 100%;
 }
 
 .oformlenie_text_3-1{
@@ -2867,8 +2872,8 @@ visibility: hidden;
 	position: relative;
 	padding-top: 30px;
 	padding-left: 20px;
-	/* padding-right: 20px; */
-	width: 350px;
+	padding-right: 20px;
+	width: 100%;
 	text-align:justify;
 }
 .oformlenie_text_4{
@@ -2958,8 +2963,8 @@ visibility: hidden;
 	position: relative;
 	padding-top: 30px;
 	padding-left: 20px;
-	/* padding-right: 20px; */
-	width: 350px;
+	padding-right: 20px;
+	width: 100%;
 	text-align:justify;
 }
 .oformlenie_text_5{
@@ -3029,16 +3034,132 @@ visibility: hidden;
 
 
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------Страница Контакты----------------------------------------*/
+
+
+.contacts{
+	visibility: hidden;
+	display: none;
+	padding-top: 80px;
+	/* padding-left: 20px; */
+}
+.contacts_1{
+	/* padding-top: 100px; */
+}
+
+.infa0{
+	padding-bottom: 64px;
+}
+
+.infa1{
+	font-size: 20px;
+	font-weight: 800;
+	
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+.infa2{
+	padding-left: 10px;
+}
+
+.infa3{
+	font-size: 16px;
+	font-weight: 200;
+	
+	padding-left: 10px;
+	padding-bottom: 14px;
+}
+
+.infa4{
+	padding-bottom: 44px;
+}
+
+.contacts_phone{
+visibility: visible;
+	display: block;
+	padding-top: 40px;
+	padding-left: 20px;
+}
+
+
+.contacts_map{
+	margin-top: 40px;
+	height: 455px;
+	background: #ebe2e8;
+}
+
+.map{
+	padding-top: 35px;
+}
+
+
+/*---------Подвал страницы контактов-------------*/
+.footer_contacts{
+	visibility: hidden;
+	display: none;
+}
+
+.footer_contacts_phone{
+	visibility: visible;
+	display: block;
+	
+	position: relative;
+	background: url("../img/footer/footer_phone.png");
+	width: 400px;
+	height: 470px;
+	top: 0px;
+	color: #fff;
+	/* padding-left: 32%; */
+	text-align: left;
+	font-weight: 400;
+}
+/*---------Черный подвал страницы контактов-------------*/
+.black_footer_contacts{
+	position: relative;
+	background: black;
+	height: 92px;
+	bottom: 0;
+	font-size: 14px;
+	color: #fff;
+	padding-left: 40px;
+	padding-top: 38px;
+}
 
 
 
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------Страница Отправить заявку----------------------------------------*/
 
+/*------------Черный подвал страницы контактов-------------*/
+.footer_request_phone{
+	visibility: visible;
+	display: block;
+	
+	position: relative;
+	background: url("../img/footer/footer_phone.png");
+	width: 400px;
+	height: 470px;
+	top: 80px;
+	color: #fff;
+	/* padding-left: 32%; */
+	text-align: left;
+	font-weight: 400;
+}
 
-
-
-
-
+.black_footer_request{
+	position: relative;
+	background: black;
+	height: 92px;
+	top: 80px;
+	bottom: 0;
+	font-size: 14px;
+	color: #fff;
+	padding-left: 40px;
+	padding-top: 38px;
+}
 
 
 
