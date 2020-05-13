@@ -36,6 +36,9 @@ table{
 	display: block;
 	margin-bottom: 30px;
 }
+p{
+	font-size: 16px;
+}
 /*---------------------------------Container-----------------------------------*/
 .container{
 	width: 100%;
@@ -93,14 +96,14 @@ hr{
 	padding-left: 50px;
 	letter-spacing: -0.5px;
 	
-	font-size: 14px;
+	font-size: 15px;
 }
 
 .strip_header{
-	width: 240px;
+	width: 250px;
 	height: 3px;
 	background: #754e6a;
-	left: 35%;
+	left: 34%;
 	position: relative;
 }
 
@@ -110,10 +113,12 @@ hr{
 	
 	text-align: center;
 	font-weight: 400;
-	width: 311px;
+	width: 320px;
 	line-height: 1;
 	padding-top: 6px;
 	padding-left: 65px;
+	
+	font-size: 15px;
 }
 
 .header_text_image{
@@ -359,6 +364,7 @@ hr{
 /*---------------------------------------------------Itnro------------------------------*/
 
 .intro{
+	margin-top: 10px;
 	width: 400px;
 	height: 350px;
 	background: url("../img/intro4.png") no-repeat center;
@@ -393,11 +399,11 @@ hr{
 	z-index: 1000;
     visibility: visible;
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #754e6a;
     font-weight: 700;
-    width: 170px;
-    height: 47px;
+    width: 200px;
+    height: 50px;
     text-align: center;
     padding: 13px 20px;
     position: absolute;
@@ -420,6 +426,7 @@ hr{
 
 .heading{
 	font-size: 24px;
+	 /* font-weight: 600; */
 }
 
 .heading_text{
@@ -541,7 +548,7 @@ input{
 	padding-top: 3%;
 	padding-bottom: 3%;
 	display: block;
-	width: 300px;
+	width: 355px;
 	border: none;
 	border-bottom: 1px solid #754e6a;
 }
@@ -572,7 +579,7 @@ input:focus{
 	
 	border: none;
 	border-bottom: 1px solid #754e6a;
-	width: 300px;
+	width: 355px;
 	height: 94px;
 	/* height: 97px; */
 }
@@ -2270,10 +2277,65 @@ visibility: hidden;
 }
 /*---------------------3 блок--------------------*/
 ._4_prices{
+	visibility: hidden;
+	display: none;
 	padding-top: 60px;
 	width: 100%;
 }
+._4_prices_phone{
+	visibility: visible;
+	display: block;
+	
+	padding-top: 60px;
+	padding-left: 20px;
+	width: 100%;
+}
 
+.prices1{
+	position: relative;
+	padding-top: 40px;
+	text-align: center;
+	
+	width: 360px;
+	height: 628px;
+
+	background: #FAF2F7;
+	border: 1px solid #754E6A;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+}
+.prices2{
+	margin-top: 20px;
+	padding-top: 0px;
+	text-align: center;
+	
+	width: 360px;
+	height: 628px;
+
+	background: #FFFFFF;
+	border: 1px solid #754E6A;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+	
+	margin-left: 0px;
+	margin-right: 30px;
+}
+.prices3{
+	margin-top: 20px;
+	padding-top: 40px;
+	text-align: center;
+	
+	width: 360px;
+	height: 628px;
+
+	background: #FAF2F7;
+	border: 1px solid #754E6A;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+}
 /*---------------------4 блок---------------*/
 ._4_services_4{
 	position: relative;
@@ -2371,11 +2433,19 @@ visibility: hidden;
 /*--------------------------------------Страница Цены--------------------------------------*/
 
 .prices{
-	padding-top: 120px;
-	width: 100%;
+	visibility: hidden;
+	display: none;
 }
 
+.prices_phone{
+	visibility: visible;
+	display: block;
+	padding-top: 80px;
+	padding-left: 20px;
+	width: 100%;
+}
 .prices1{
+	position: relative;
 	padding-top: 40px;
 	text-align: center;
 	
@@ -2389,11 +2459,12 @@ visibility: hidden;
 	border-radius: 8px;
 }
 .prices2{
-	padding-top: 40px;
+	margin-top: 20px;
+	padding-top: 0px;
 	text-align: center;
 	
-	width: 380px;
-	height: 658px;
+	width: 360px;
+	height: 628px;
 
 	background: #FFFFFF;
 	border: 1px solid #754E6A;
@@ -2401,10 +2472,11 @@ visibility: hidden;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 	border-radius: 8px;
 	
-	margin-left: 30px;
+	margin-left: 0px;
 	margin-right: 30px;
 }
 .prices3{
+	margin-top: 20px;
 	padding-top: 40px;
 	text-align: center;
 	
@@ -2489,28 +2561,33 @@ visibility: hidden;
 .prices1_button_prices_2{
 	padding-top: 40px;
 }
-/*---------Подвал страницы фото прайса-------------*/
+/*---------Подвал страницы Цены-------------*/
 .footer_prices{
-		visibility: visible;
+	visibility: hidden;
+	display: none;
+}
+.footer_prices_phone{
+	visibility: visible;
 	display: block;
 	
 	position: relative;
-	background: url("../img/footer1.png");
-	height: 310px;
-	top: 100px;
+	background: url("../img/footer/footer_phone.png");
+	width: 400px;
+	height: 470px;
+	top: 50px;
 	color: #fff;
 	/* padding-left: 32%; */
 	text-align: left;
 	font-weight: 400;
 }
-/*---------Черный подвал страницы прайса-------------*/
+/*---------Черный подвал страницы Цены-------------*/
 .black_footer_prices{
 	position: relative;
 	background: black;
 	height: 92px;
-	top: 100px;
+	top: 50px;
 	bottom: 0;
-	font-size: 16px;
+	font-size: 14px;
 	color: #fff;
 	padding-left: 40px;
 	padding-top: 38px;
