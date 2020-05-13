@@ -1819,11 +1819,20 @@ visibility: hidden;
 	color: #754e6a;
 	font-weight: 800;
 	
-	padding-left: 740px;
+	padding-left: 743px;
 	top: 58px;
 	width: 100%;
 }
 
+._3_services_logo_2_phone{
+visibility: hidden;
+	display: none;
+}
+
+._3_services_logo_3_phone{
+visibility: hidden;
+	display: none;
+}
 /*---------------------3 блок--------------------*/
 ._3_services_3{
 	position: relative;
@@ -1898,6 +1907,16 @@ visibility: hidden;
 	top: 58px;
 	width: 100%;
 }
+
+._3_services_logo_4_phone{
+visibility: hidden;
+	display: none;
+}
+
+._3_services_logo_5_phone{
+visibility: hidden;
+	display: none;
+}
 /*---------------------5 блок--------------------*/
 
 ._3_services_5{
@@ -1936,10 +1955,13 @@ visibility: hidden;
 	width: 800px;
 }
 
-
 ._3_services_img_5{
 	padding-top: 15px;
 	padding-left: 15px;
+}
+._3_services_img_5_phone{
+visibility: hidden;
+	display: none;
 }
 
 /*---------------------6 блок со вставкой оглавления блока---------------*/
@@ -1967,12 +1989,15 @@ visibility: hidden;
 	width: 100%;
 }
 
-
+._3_services_logo_6_phone{
+visibility: hidden;
+	display: none;
+}
 /*---------------------7 блок--------------------*/
 
 ._3_services_7{
 	position: relative;
-	
+	padding-top: 30px;
 	width: 100%;
 	text-align:justify;
 }
@@ -1980,7 +2005,6 @@ visibility: hidden;
 	position: relative;
 	
 	padding-right: 30px;
-	
 	width: 800px;
 }
 
@@ -2030,7 +2054,15 @@ visibility: hidden;
 	top: 69px;
 	width: 100%;
 }
+._3_services_logo_8_phone{
+visibility: hidden;
+	display: none;
+}
 
+._3_services_logo_9_phone{
+visibility: hidden;
+	display: none;
+}
 /*---------------------9 блок--------------------*/
 
 ._3_services_9{
@@ -2041,6 +2073,8 @@ visibility: hidden;
 	text-align:justify;
 }
 ._3_services_text_9{
+		visibility: visible;
+	display: block;
 	position: relative;
 	
 	padding-right: 45px;
@@ -2076,6 +2110,8 @@ visibility: hidden;
 /*---------------------10 блок--------------------*/
 
 ._3_services_10{
+	visibility: visible;
+	display: block;
 	position: relative;
 	padding-top: 180px;
 	width: 100%;
@@ -2084,6 +2120,8 @@ visibility: hidden;
 }
 
 ._3_services_text_10{
+	visibility: visible;
+	display: block;
 	text-align: center;
 	font-weight: 800;
 	
@@ -2092,7 +2130,10 @@ visibility: hidden;
 	
 	padding-left: 15%;
 }
-
+._3_services_10_phone{
+	visibility: hidden;
+	display: none;
+}
 .oformlenie_black_{
 	text-align: center;
 	font-weight: 800;
@@ -2132,6 +2173,16 @@ visibility: hidden;
 	top: 69px;
 	width: 100%;
 }
+
+._3_services_12{
+	position: relative;
+	
+	padding-top: 30px;
+	/* padding-left: 45px; */
+	
+	width: 100%;
+}
+
 ._3_services_logo_12{
 	position: absolute;
 	
@@ -2147,7 +2198,15 @@ visibility: hidden;
 ._3_services_text_12{
 	padding-left: 45px;
 }
+._3_services_logo_11_phone{
+visibility: hidden;
+	display: none;
+}
 
+._3_services_logo_12_phone{
+visibility: hidden;
+	display: none;
+}
 /*---------Подвал страницы 3-------------*/
 .footer_3{
 	visibility: visible;
@@ -2195,9 +2254,15 @@ visibility: hidden;
 	text-align:justify;
 }
 ._4_services_img_1{
+	visibility: visible;
+	display: block;
+	
 	padding-top: 20px;
 }
-
+._4_services_img_1_phone{
+	visibility: hidden;
+	display: none;
+}
 /*---------------------2 блок со вставкой оглавления блока---------------*/
 
 ._4_services_2{
@@ -2233,13 +2298,14 @@ visibility: hidden;
 	position: relative;
 	
 	padding-top: 60px;
-	padding-left: 45px;
 	
 	width: 100%;
 }
 
 /*---------------------6 блок---------------*/
 ._4_services_6{
+	visibility: visible;
+	display: block;
 	position: relative;
 	padding-top: 50px;
 	width: 100%;
@@ -2255,7 +2321,10 @@ visibility: hidden;
 	
 	padding-left: 15%;
 }
-
+._4_services_6_phone{
+	visibility: hidden;
+	display: none;
+}
 
 /*---------Подвал страницы 4-------------*/
 .footer_4{
@@ -2448,16 +2517,18 @@ visibility: hidden;
 	width: 100%;
 }
 
-.oformlenie_0{
+/*----------------------2 блок оглавление----------------------*/
+._2_oformlenie{
 	position: relative;
 	
 	padding-top: 45px;
 	padding-left: 45px;
-	
 	width: 100%;
 }
 
 .oformlenie_logo_1{
+	visibility: visible;
+	display: block;
 	position: absolute;
 	
 	font-size: 24px;
@@ -2465,11 +2536,13 @@ visibility: hidden;
 	font-weight: 800;
 	
 	padding-left: 21px;
-	top: 58px;
+	top: 56px;
 	width: 100%;
 }
 
 .oformlenie_logo_2{
+	visibility: visible;
+	display: block;
 	position: absolute;
 	
 	font-size: 24px;
@@ -2477,10 +2550,20 @@ visibility: hidden;
 	font-weight: 800;
 	
 	padding-left: 710px;
-	top: 58px;
+	top: 56px;
 	width: 100%;
 }
 
+.oformlenie_logo_1_phone{
+visibility: hidden;
+	display: none;
+}
+
+.oformlenie_logo_2_phone{
+visibility: hidden;
+	display: none;
+}
+/*------------------------3 блок -------------------*/
 .oformlenie_text_1{
 	padding-top: 45px;
 	padding-right: 40px;
@@ -2490,17 +2573,24 @@ visibility: hidden;
 }
 .oformlenie_text_2{
 	padding-top: 15px;
+	padding-right: 30px;
 	width: 766px;
 }
 
+._3_oformlenie{
+	visibility: visible;
+	display: block;
+}
 
-/*--------------------------------------Страница Оформление Документы--------------------------------------*/
-
-.oformlenie_documents{
+._3_oformlenie_phone{
+	visibility: hidden;
+	display: none;
+}
+/*------------------------4 оглавление------------------------*/
+._4_oformlenie{
 	padding-top: 20px;
 	width: 100%;
 }
-
 .oformlenie_1{
 	position: relative;
 	
@@ -2544,6 +2634,64 @@ visibility: hidden;
 	width: 100%;
 }
 
+._4_oformlenie{
+	position: relative;
+	
+	padding-top: 45px;
+	padding-left: 45px;
+	width: 100%;
+}
+
+.oformlenie_logo_1{
+	visibility: visible;
+	display: block;
+	position: absolute;
+	
+	font-size: 24px;
+	color: #754e6a;
+	font-weight: 800;
+	
+	padding-left: 21px;
+	top: 56px;
+	width: 100%;
+}
+
+.oformlenie_logo_2{
+	visibility: visible;
+	display: block;
+	position: absolute;
+	
+	font-size: 24px;
+	color: #754e6a;
+	font-weight: 800;
+	
+	padding-left: 710px;
+	top: 56px;
+	width: 100%;
+}
+
+.oformlenie_logo_3_phone{
+visibility: hidden;
+	display: none;
+}
+.oformlenie_logo_4_phone{
+visibility: hidden;
+	display: none;
+}
+/*------------------------5 ------------------------*/
+._5_oformlenie{
+		visibility: visible;
+	display: block;
+	padding-top: 20px;
+	width: 100%;
+}
+._5_oformlenie_photo{
+	visibility: hidden;
+	display: none;
+}
+.oformlenie_img_1{
+	padding-top: 45px;
+}
 .oformlenie_text_3{
 	padding-top: 45px;
 	padding-left: 30px;
@@ -2553,12 +2701,7 @@ visibility: hidden;
 	padding-left: 35px;
 }
 
-.oformlenie_img_1{
-	padding-top: 45px;
-}
-
-
-/*--------------------------------------Страница Оформление Черная вставка--------------------------------------*/
+/*------------------------6 ------------------------*/
 .oformlenie_black{
 	position: relative;
 	padding-top: 25px;
@@ -2572,9 +2715,17 @@ visibility: hidden;
 	font-size: 18px;
 }
 
-/*--------------------------------------Страница Порядок Оформления--------------------------------------*/
+._6_oformlenie_order{
+	padding-top: 20px;
+	width: 100%;
+}
 
-.oformlenie_order{
+._6_oformlenie_phone{
+	visibility: hidden;
+	display: none;
+}
+/*------------------------7 оглавление------------------------*/
+._7_oformlenie_order{
 	padding-top: 20px;
 	width: 100%;
 }
@@ -2624,19 +2775,25 @@ visibility: hidden;
 	width: 100%;
 }
 
-.oformlenie_text_4{
-	padding-top: 45px;
-	padding-left: 30px;
+.oformlenie_logo_5_phone{
+	visibility: hidden;
+	display: none;
 }
-
-
-/*--------------------------------------Страница КАКИЕ ЛИЧНЫЕ ВЕЩИ ДОЛЖЕН ИМЕТЬ ПРИ СЕБЕ --------------------------------------*/
+.oformlenie_logo_6_phone{
+	visibility: hidden;
+	display: none;
+}
+/*------------------------8 ------------------------*/
+._8_oformlenie_order{
+	padding-top: 20px;
+	width: 100%;
+}
 
 .oformlenie_infa{
 	padding-top: 20px;
 	width: 100%;
 }
-
+/*------------------------9 оглавление------------------------*/
 .oformlenie_3{
 	position: relative;
 	
@@ -2644,6 +2801,10 @@ visibility: hidden;
 	padding-left: 45px;
 	
 	width: 100%;
+}
+.oformlenie_text_4{
+	padding-top: 45px;
+	padding-left: 30px;
 }
 
 .oformlenie_logo_7{
@@ -2682,10 +2843,29 @@ visibility: hidden;
 	width: 100%;
 }
 
+.oformlenie_logo_7_phone{
+	visibility: hidden;
+	display: none;
+}
+.oformlenie_logo_8_phone{
+	visibility: hidden;
+	display: none;
+}
+/*------------------------10 ------------------------*/
+._9_oformlenie_infa{
+	position: relative;
+	
+	padding-top: 45px;
+	padding-left: 45px;
+	
+	width: 100%;
+}
+
 .oformlenie_text_5{
 	padding-top: 45px;
 	padding-left: 30px;
 }
+
 
 .button_oformlenie{
 	margin-top: 89px;
@@ -2726,6 +2906,10 @@ visibility: hidden;
 	/* padding-left: 32%; */
 	text-align: left;
 	font-weight: 400;
+}
+.footer_oformlenie_phone{
+	visibility: hidden;
+	display: none;
 }
 /*---------Черный подвал страницы оформления-------------*/
 .black_footer_oformlenie{
