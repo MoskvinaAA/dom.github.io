@@ -1,6 +1,6 @@
 /*--------Адаптив главной--------*/
 
-@media(min-width: 321px) and (max-width: 375px){
+@media(min-width: 321px) and (max-width: 400px){
 
 body {
 	width: 100%;
