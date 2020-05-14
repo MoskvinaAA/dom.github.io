@@ -411,7 +411,7 @@ hr{
     padding: 13px 20px;
     position: absolute;
     border-radius: 10px;
-    left: 51%;
+    left: 55%;
     transform: translate(-50%, -50%);
     color: #fff;
     text-decoration: none;
@@ -601,7 +601,7 @@ input:focus{
     position: absolute;
 	border-radius: 10px;
 	padding: 14px 25px;
-	left: 31%;	
+	left: 34%;	
 	
 	color: #fff; /* Цвет текста */
 	text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -955,7 +955,7 @@ input:required{
 	
 	position: relative;
 	background: url("../img/footer/footer_phone.png");
-	width: 100%;
+	width: 400px;
 	/* height: 470px; */
 	top: 690px;
 	color: #fff;
@@ -1157,7 +1157,7 @@ input:required{
 	
 	position: relative;
 	width: 100%;
-	margin-left: 10px;
+	margin-left: 15px;
 	
 	width: 360px;
 	height: 290px;
@@ -1169,7 +1169,7 @@ input:required{
 }
  
 .photo_table_home .photo_table_home_bg{
-	margin-left: 10px;
+	margin-left: 15px;
 	position: absolute;
 	background: #fdeef8a6;
 	width: 100%;
@@ -1195,7 +1195,7 @@ input:required{
 /*----------------------*/
 .photo_table_gr{
 	position: relative;
-	margin-left: 10px;
+	margin-left: 15px;
 	
 	width: 360px;
 	height: 290px;
@@ -1210,7 +1210,7 @@ input:required{
 }
 
 .photo_table_gr .photo_table_gr_bg{
-	margin-left: 10px;
+	margin-left: 15px;
 	
 	position: absolute;
 	background: #fdeef8a6;
@@ -1230,9 +1230,10 @@ input:required{
 	font-weight: 800;
 	text-align: center;
 	
-	top: 100px;
+	top: 63px;
 	width: 100%;
 	z-index: 1000;
+	padding-left: 13px;
 }
 
 /*---------Подвал страницы фото-------------*/
@@ -1330,20 +1331,6 @@ input:required{
 }
 
 /*---------Подвал страницы фото дома-------------*/
-.footer_photo_dom{
-	visibility: visible;
-	display: block;
-	
-	position: relative;
-	background: url("../img/footer1.png");
-	height: 310px;
-	top: 30px;
-	color: #fff;
-	/* padding-left: 32%; */
-	text-align: left;
-	font-weight: 400;
-}
-/*---------Черный подвал страницы фото-------------*/
 .footer_photo_dom{
 	visibility: hidden;
 	display: none;
@@ -3122,6 +3109,7 @@ visibility: visible;
 
 
 .contacts_map{
+	width: 400px;
 	margin-top: 40px;
 	height: 455px;
 	background: #ebe2e8;
