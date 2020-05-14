@@ -138,14 +138,12 @@
    <table>
 		<tr>
 			<td>
-				<div class="menu__box_icon1"><img src="img/hamburger-menu/1.png" alt="HTML5" style="vertical-align: middle;"/></div>
-				<a href="https://www.facebook.com/grandpa.filipych"></a>
+				<a class="menu__box_icon1" href="https://www.facebook.com/grandpa.filipych"><img src="img/hamburger-menu/1.png" alt="HTML5" style="vertical-align: middle;"/>
+				</a>
 
-				<div class="menu__box_icon2"><img src="img/hamburger-menu/2.png" alt="HTML5" style="vertical-align: middle;"/></div>
-				<a href="https://vk.com/club155151679"></a>
+				<a class="menu__box_icon2" href="https://vk.com/club155151679"><img src="img/hamburger-menu/2.png" alt="HTML5" style="vertical-align: middle;"/></a>
 
-				<div class="menu__box_icon3"><img src="img/hamburger-menu/3.png" alt="HTML5" style="vertical-align: middle;"/></div>
-				<a href="https://ok.ru/filipych"></a>
+				<a class="menu__box_icon3" href="https://ok.ru/filipych"><img src="img/hamburger-menu/3.png" alt="HTML5" style="vertical-align: middle;"/></a>
 			</td>
 		</tr>
 	</table>
@@ -336,24 +334,24 @@
  <!-- 5 блок -->
 <div class="form">
 	<table>
-		<th>
-			<form method="post">
+		<th> <a href="mailto:vjcr-200@mail.ru"></a>
+			<form action="mail.php" id="recall" method="post">
 				<div class="form_box">				
 					<div class="group">      
-						<input type="text" id="name" placeholder="Имя" name="Имя" onblur="if(this.value.length == 0) this.value = 'Имя'"
+						<input for="name" type="text" id="name" placeholder="Имя" name="Имя" onblur="if(this.value.length == 0) this.value = 'Имя'"
 						onfocus="if(this.value == 'Имя') this.value = '' " required
 						oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"/>
 					</div>
 					
 					<div class="group">      
-						<input type="email" id="email" name="email" value="E-mail" onblur="if(this.value.length == 0) this.value = 'E-mail'" 
+						<input for="email" type="email" id="email" name="email" value="E-mail" onblur="if(this.value.length == 0) this.value = 'E-mail'" 
 						onfocus="if(this.value == 'E-mail') this.value = '' " required 
 						oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"/>
 					</div>
 					
 					<script src="js/jquery.maskedinput.min.js"></script>
 					<div class="group">      
-						<input type="text" id="user_phone"  placeholder="+7(999)999-99-99" name="phone_number" onblur="if(this.value.length == 0) this.value = '+7(999)999-99-99'"
+						<input for="name" type="text" id="user_phone"  placeholder="+7(999)999-99-99" name="phone_number" onblur="if(this.value.length == 0) this.value = '+7(999)999-99-99'"
 						onfocus="if(this.value == 'tel') this.value = '' " required 
 						oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"/>
 					</div>
@@ -372,6 +370,30 @@
 
 					<button id="button" class="button2" class="btn_submit disabled" type="submit" value="Отправить">Отправить</button>
 					<!-- <div id="button" class="button2" class="btn_submit disabled" type="submit" value="Отправить">Отправить</div>  -->
+					
+						<script>
+$(function(){
+	$('#recall').submit(function(e){
+		e.preventDefault();
+		var data = $(this).serialize();
+		$.ajax({
+			url: 'mail.php',
+			type: 'POST',
+			data: data,
+			beforeSend: function(){
+				$('#submit').next().text('Отправляю...');
+			},
+			success: function(res){
+				$('#recall').find('input').val('');
+				$('.popup-fade').next().html(res);
+			},
+			error: function(){
+				$('.popup_invalid');
+			}
+		});
+	});
+});
+	</script>
 					
 					<!-- Выдиление req формы -->
 					<script type="text/javascript">
@@ -699,7 +721,7 @@
 	</div>
 </div>
 
-	<div class = "footer_phone" width=" 100%">
+<div class = "footer_phone" width="100%">
 		<div class="container">	
 			<table>
 				<tr>
@@ -873,6 +895,8 @@ var h_hght1 = 0; // высота шапки
      });
     });
 </script>
+<!---------- Кн звонка ---------->
+<div id="button_bell"><img src="img/bell1.png"/><a href=”tel: 88005553535″></a></div>
 
 </body>
 </html> 

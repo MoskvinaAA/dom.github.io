@@ -346,6 +346,7 @@ hr{
 	position: fixed;
 	bottom: 10px;
 	padding-left: 20px;
+	z-index: 3;
 }
 
 .menu__box_icon2{
@@ -353,6 +354,7 @@ hr{
 	position: fixed;
 	bottom: 10px;
 	padding-left: 60px;
+	z-index: 2;
 }
 
 .menu__box_icon3{
@@ -360,6 +362,7 @@ hr{
 	position: fixed;
 	bottom: 10px;
 	padding-left: 100px;
+	z-index: 1;
 }
 /*---------------------------------------------------Itnro------------------------------*/
 
@@ -408,7 +411,7 @@ hr{
     padding: 13px 20px;
     position: absolute;
     border-radius: 10px;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
     color: #fff;
     text-decoration: none;
@@ -598,7 +601,7 @@ input:focus{
     position: absolute;
 	border-radius: 10px;
 	padding: 14px 25px;
-	left: 30%;	
+	left: 31%;	
 	
 	color: #fff; /* Цвет текста */
 	text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -919,7 +922,7 @@ input:required{
     position: absolute;
 	border-radius: 10px;
 	padding: 14px 0px;
-	left: 25%;	
+	left: 28%;	
 	margin-top: 30px;
 	
 	color: #fff; /* Цвет текста */
@@ -952,7 +955,7 @@ input:required{
 	
 	position: relative;
 	background: url("../img/footer/footer_phone.png");
-	/* width: 100%; */
+	width: 100%;
 	/* height: 470px; */
 	top: 690px;
 	color: #fff;
@@ -1087,7 +1090,36 @@ input:required{
     font-family: verdana;
     font-size: 11px;
 }
+/*--------Кнопка звонка--------*/
+#button_bell {
+	visibility: visible;
+	display: block;
+    padding: 5px;
+    position: fixed;
+    bottom: -5px;
+    right: -10px;
+    cursor: pointer;
+	
+ width: 100px;
+  height: 100px;
+  /* background-color: #00f; */
+  border-radius: 50%;
+  transform: scale(.85);
+  animation: pulse 2s ease-in-out infinite;
+ 
+}
 
+@keyframes pulse {
+  from {
+    transform: scale(.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.85);
+  }
+}
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------Страница Фото--------------------------------------*/
