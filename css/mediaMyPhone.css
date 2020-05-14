@@ -139,7 +139,9 @@ hr{
 }
 .podmenu{
 	display: none;
+	
 	z-index: 10001;
+	text-decoration: none;
 }
 .top1_mediaMyPhone{
 	/* padding: 20px 0; */
@@ -210,12 +212,6 @@ hr{
 .top1_mediaMyPhone:focus ~ .podmenu, 
 .top1_mediaMyPhone:active ~ .podmenu, 
 .podmenu:hover 
-{ 
-   display: block; 
-} 
-.podmenu:focus ~ .top1_mediaMyPhone, 
-.podmenu:active ~ .top1_mediaMyPhone, 
-.top1_mediaMyPhone:hover 
 { 
    display: block; 
 } 
@@ -304,7 +300,7 @@ hr{
   list-style: none;
 
   background-color: #754E6A;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  box-shadow: -20px 0px 400px 0px rgb(255, 255, 255);
 
   transition-duration: .25s;
   z-index: 10000;
@@ -364,6 +360,7 @@ hr{
 	padding-left: 100px;
 	z-index: 1;
 }
+
 /*---------------------------------------------------Itnro------------------------------*/
 
 .intro{

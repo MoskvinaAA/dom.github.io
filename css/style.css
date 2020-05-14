@@ -2352,7 +2352,14 @@ visibility: hidden;
 	visibility: hidden;
 	display: none;
 }
-
+._4_prices_phone{
+	visibility: hidden;
+	display: none;
+	
+	padding-top: 60px;
+	padding-left: 20px;
+	width: 100%;
+}
 /*---------Подвал страницы 4-------------*/
 .footer_4{
 	visibility: visible;
@@ -2394,7 +2401,10 @@ visibility: hidden;
 	padding-top: 120px;
 	width: 100%;
 }
-
+.prices_phone{
+	visibility: hidden;
+	display: none;
+}
 .prices1{
 	padding-top: 40px;
 	text-align: center;
@@ -2522,6 +2532,10 @@ visibility: hidden;
 	/* padding-left: 32%; */
 	text-align: left;
 	font-weight: 400;
+}
+.footer_prices_phone{
+	visibility: hidden;
+	display: none;
 }
 /*---------Черный подвал страницы прайса-------------*/
 .black_footer_prices{
@@ -2960,6 +2974,10 @@ visibility: hidden;
 	padding-top: 80px;
 	/* padding-left: 20px; */
 }
+.contacts_phone{
+		visibility: hidden;
+	display: none;
+}
 .contacts_1{
 	/* padding-top: 100px; */
 }
@@ -3017,6 +3035,10 @@ visibility: hidden;
 	text-align: left;
 	font-weight: 400;
 }
+.footer_contacts_phone{
+		visibility: hidden;
+	display: none;
+}
 /*---------Черный подвал страницы контактов-------------*/
 .black_footer_contacts{
 	position: relative;
@@ -3029,4 +3051,13 @@ visibility: hidden;
 	padding-top: 38px;
 }
 
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------Страница Отправить заявку----------------------------------------*/
+
+/*------------Черный подвал страницы контактов-------------*/
+.footer_request_phone{
+		visibility: hidden;
+	display: none;
+	
+}
 
