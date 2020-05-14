@@ -332,8 +332,10 @@
  <!-- 5 блок -->
 <div class="form">
 	<table>
-		<th> <a href="mailto:vjcr-200@mail.ru"></a>
-			<form action="mail.php" id="recall" method="post">
+		<th> 
+		<!-- <a href="mailto:vjcr-200@mail.ru"></a> -->
+		<!-- <form action="mail.php" > -->
+			<form id="form" method="post">
 				<div class="form_box">				
 					<div class="group">      
 						<input for="name" type="text" id="name" placeholder="Имя" name="Имя" onblur="if(this.value.length == 0) this.value = 'Имя'"
@@ -368,31 +370,26 @@
 
 					<button id="button" class="button2" class="btn_submit disabled" type="submit" value="Отправить">Отправить</button>
 					<!-- <div id="button" class="button2" class="btn_submit disabled" type="submit" value="Отправить">Отправить</div>  -->
-					
-						<script>
-$(function(){
-	$('#recall').submit(function(e){
-		e.preventDefault();
-		var data = $(this).serialize();
-		$.ajax({
-			url: 'mail.php',
-			type: 'POST',
-			data: data,
-			beforeSend: function(){
-				$('#submit').next().text('Отправляю...');
-			},
-			success: function(res){
-				$('#recall').find('input').val('');
-				$('.popup-fade').next().html(res);
-			},
-			error: function(){
-				$('.popup_invalid');
-			}
-		});
-	});
+
+		<script>
+$(document).ready(function(){
+    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "mail.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!");
+            }
+            });
+    });
 });
 	</script>
-					
+
+
+			
 					<!-- Выдиление req формы -->
 					<script type="text/javascript">
 						$('group').ready(function() {
