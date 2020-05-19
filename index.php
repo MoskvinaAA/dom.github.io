@@ -1,0 +1,899 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<!-- <meta name="viewport" content="user-scalable=yes"> -->
+	<meta name="viewport" content="width=device-width" content="user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/media320.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/mediaMyPhone.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<script src="js/script.js"/>
+	<title>Дом престарелых "Филипыч"</title>
+
+	<!-- /*Адаптив*/ -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- /*Анимация форм*/ -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.js" type="text/javascript"></script>
+	<!-- /*Скролл меню*/ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- /*Телефон*/ -->
+	<!-- Подключение библиотеки jQuery -->
+	<script src="js/jquery.js"></script>
+	<!-- Подключение jQuery плагина Masked Input -->
+	<script src="js/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+	<div class="progress-container">
+		<div class="progress-bar" id="myBar"></div>
+	</div>
+</div>
+<!-- <div class="header_phone"> -->
+	<!-- <div class="progress-container1"> -->
+		<!-- <div class="progress-bar1" id="myBar"></div> -->
+	<!-- </div> -->
+<!-- </div> -->
+
+<!-------------- Шапка ------------------->
+<header class="header_">
+		<div class="container">
+			<div class="header_inner">
+				<a href="index.php"><img class="header_item_logo" src="img/logo/logo.png" alt="HTML5"></a>
+				<div class="header_item">
+					<p class="header_text header_text1" >
+						Московская область, Одинцовский<br>район, дер. Марьино, ул. Южная, д.3
+					</p>
+				</div>
+											
+				<div class="header_item">
+					<p class="header_text2">
+						<img  class="header_text_image"src="img/logo/phone.png" alt="HTML5" width=45px; height=45px;>
+						+7(915)212-28-18
+					</p>
+				</div>			
+											
+				<div class="header_item">
+					<p class="header_text3">
+						<img  class="header_text_image" src="img/logo/clock.png" alt="HTML5"> 
+						Часы работы <br> Круглосуточно
+					</p>
+				</div>					
+			</div>
+			
+				<div class ="strip_header"></div>					
+					<div class="header_text4">
+						Московская область, Одинцовский<br>район, дер. Марьино, ул. Южная, д.3
+					</div>
+		</div>
+</header>
+
+<!----------------- Фиксация Меню ---------------------->
+<div id= "scroll">
+	<!-- Меню -->
+<div class="menu-main">
+	<div class="container">
+		<nav class="menu">
+			<ul id="top-menu">
+				<li><a href="index.php" class="active-button">Главная</a></li>
+				<li><a class= "top_" href="photo.html">Фото</a></li>
+				<li><div class= "top1" href="">Услуги▾
+					<div class="sub-menu1"></div>
+						<div class="sub-menu">
+							<a class= "top_0" href="1.html">Медицинский уход</a>
+							<a class= "top_0" href="2.html">Пансионат для инвалидов по зрению</a>
+							<a class= "top_0" href="3.html">Психоневрологический пансионат</a>
+							<a class= "top_0" href="4.html">Сестринский уход за пожилыми людьми</a>
+						</div>
+					</div>
+				</li>
+				<li><a class= "top_" href="prices.html">Цены</a></li>
+				<li><a class= "top_" href="oformlenie.html">Оформление</a></li>
+				<li><a class= "top_" href="contacts.html">Контакты</a></li>
+				<li><a class= "top_" href="request.php">Отправить заявку</a></li>
+				<li><a class= "top_" href="reviews.php">Отзывы</a></li>
+			</ul>
+		</nav>
+	</div>	
+</div>
+</div>
+<!--------------------Гамбургер меню------------------>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+	<div class="menu_btn"><img src="img/hamburger-menu/Ellipse1.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__btn" for="menu__toggle"></label>
+
+	<ul class="menu__box">
+
+	<input id="menu__toggle" type="checkbox" />
+	<div class="menu_b"><img src="img/hamburger-menu/close_menu.png" alt="HTML5" style="vertical-align: middle;"/></div>
+    <label class="menu__b" for="menu__toggle"></label>
+	
+	<img src="img/hamburger-menu/close_menu.png" class="menu__box_img_close" onclick="myFunction()" alt="HTML5" style="vertical-align: middle;"/>
+		
+		<li><a class="menu__item" href="index.php">Главная</a></li>
+		<li><a class= "menu__item" href="photo.html">Фото</a></li>
+			<li>
+				<a class="top1_mediaMyPhone" href="javascript:void(0);" tabindex="1">Услуги▾</a>
+				<div class="podmenu">
+					<div class="sub-menu1_mediaMyPhone"></div>
+						<div class="sub-menu_mediaMyPhone">
+							<a class= "top_0" href="1.html">Медицинский уход</a>
+							<a class= "top_0" href="2.html">Пансионат для инвалидов по зрению</a>
+							<a class= "top_0" href="3.html">Психоневрологический пансионат</a>
+							<a class= "top_0" href="4.html">Сестринский уход за пожилыми людьми</a>
+						</div>
+				</div>
+				
+			</li>
+			<li><a class= "menu__item" href="prices.html">Цены</a></li>
+			<li><a class= "menu__item" href="oformlenie.html">Оформление</a></li>
+			<li><a class= "menu__item" href="contacts.html">Контакты</a></li>
+			<li><a class= "menu__item" href="request.php">Отправить заявку</a></li>
+			<li><a class= "menu__item" href="reviews.php">Отзывы</a></li>				
+   <table>
+		<tr>
+			<td>
+				<a class="menu__box_icon1" href="https://www.facebook.com/grandpa.filipych"><img src="img/hamburger-menu/1.png" alt="HTML5" style="vertical-align: middle;"/>
+				</a>
+
+				<a class="menu__box_icon2" href="https://vk.com/club155151679"><img src="img/hamburger-menu/2.png" alt="HTML5" style="vertical-align: middle;"/></a>
+
+				<a class="menu__box_icon3" href="https://ok.ru/filipych"><img src="img/hamburger-menu/3.png" alt="HTML5" style="vertical-align: middle;"/></a>
+			</td>
+		</tr>
+	</table>
+	</ul>
+</div>
+
+ <!--------------------- Главный блок --------------------->
+<div class="intro">
+	<div class="container">	
+		<div class="intro_text">Мы будем рады видеть Вас у нас!</div>
+				<a class="button" href="request.php">Оставьте заявку</a> 
+		<div class="arrow"></div>
+		<a class="button_media" href="request.php">Оставьте заявку</a>
+	</div>	
+</div>
+
+ <!-- 2 блок -->
+<div class="dom">
+	<div class="container">
+	<div class="heading">Дом престарелых</div>
+		<title>Дом престарелых</title>
+		<div class="heading_text" align="center">Люди в преклонном возрасте уже не могут вести активный образ жизни, ходить на работу или <br> хлопотать по дому — все это отнимает у них много сил и еще больше подрывает здоровье. Они <br> нуждаются в покое и качественном уходе, организовать который в домашних условиях практически <br> невозможно. В такой ситуации стоит подать заявку в частный пансионат для престарелых людей <br> «Филипыч», который находится в Звенигороде. Персонал и врачи учреждения гарантируют своим <br> постояльцам заботу, комфорт, уют и спокойствие — все то, в чем они так нуждаются на склоне лет.</div>
+		<div class="heading_text_media" align="center">Люди в преклонном возрасте уже не могут<br> вести активный образ жизни, ходить на<br> работу или хлопотать по дому — все это<br> отнимает у них много сил и еще больше<br> подрывает здоровье. Они нуждаются в<br> покое и качественном уходе, организовать<br> который в домашних условиях практическ<br> невозможно. В такой ситуации стоит подать<br> заявку в частный пансионат для<br> престарелых людей «Филипыч», который<br> находится в Звенигороде. Персонал и<br> врачи учреждения гарантируют своим<br> постояльцам заботу, комфорт, уют и<br> спокойствие — все то, в чем они так<br> нуждаются на склоне лет.</div>
+	</div>
+</div>
+
+<!-- 3 блок -->	
+<div class="text">
+	<div class="container">
+		<table class="table">
+		<tr>
+			<th><!--1-->
+			<div class="heading_item">
+			<img src="img/1.png" alt="HTML5" style="vertical-align: middle;" width="45" height="50"/>
+			<span style="vertical-align: middle; padding-left: 10px;">Удивительная Атмосфера</span>
+			</div>
+
+			<div class="text_and_icon">Наши бабушки и дедушки говорят что<br> здесь лучше чем дома.<br>И очень быстро заводят друзей и подруг.</div>
+			
+			</th>
+			
+			<th><!--2 -->
+			<div class="heading_item">
+			<img src="img/2.png" alt="HTML5" style="vertical-align: middle;" width="55" height="50"/>
+			<span style="vertical-align: middle; padding-left: 10px;">Заботливый Персонал</span>
+			</div>
+
+			<div class="text_and_icon">Одеться, раздеться, сопровождение на <br>прогулку, помощь в питании, в принятии <br>ванны и душа – наши сиделки всегда рядом</div>
+			
+			</th>
+			
+			<th><!--3 -->
+			<div class="heading_item">
+			<img src="img/3.png" alt="HTML5" style="vertical-align: middle;" width="50" height="50"/>
+			<span style="vertical-align: middle; padding-left: 10px;">Очень Доступные Цены</span>
+			</div>
+
+			<div class="text_and_icon">У нас очень демократичные цены. И при<br> таких ценах, качество ухода очень<br> высокое. Приезжайте и убедитесь сами</div>
+			
+			</th>
+		</tr>
+		
+		<tr>
+			<th><!--4 -->
+			<div class="heading_item">
+			<img src="img/4.png" alt="HTML5" style="vertical-align: middle;" width="50" height="50"/>
+			<span style="vertical-align: middle; padding-left: 10px;">Безбарьерная Среда</span>
+			</div>
+			
+			<div class="text_and_icon">Инвалидам-колясочникам у нас очень <br>нравится. В пансионате большие комнаты,<br> широкие проемы. На территории удобные<br> для движения колясок дорожки</div>
+			
+			</th>
+			
+			<th><!--5 -->
+			<div class="heading_item">
+			<img src="img/5.png" alt="HTML5" style="vertical-align: middle;" width="35" height="50"/>
+			<span style="vertical-align: middle; padding-left: 10px;">Свобода Перемещения</span>
+			</div>
+			<div class="text_and_icon">Для самостоятельных, в сопровождении <br>сиделок, предусмотрены походы в парки,<br> театры, на выставки.<br> По воскресеньям ходим в ближайший храм</div>
+			
+			</th>
+			
+			<th><!--6 -->
+			<div class="heading_item">
+			<img src="img/6.png" alt="HTML5" style="vertical-align: middle;" width="50" height="50"/>
+			<span style="vertical-align: middle; padding-left: 10px;">Время Для Творчества</span>
+			</div>
+
+			<div class="text_and_icon">У нас каждый находит занятия исходя<br> из своих интересов. Дома это было <br>невозможно по ряду причин, а здесь <br>свобода творчества</div>
+			
+			</th>
+		</tr>
+		</table>
+		
+		
+		
+		<table class="table_media">
+		<tr>
+			<th><!--1-->
+			<div class="heading_item">
+			<img src="img/1.png" alt="HTML5" style="vertical-align: middle;" width="40" height="40"/>
+			<span style="vertical-align: middle; padding-left: 5px;">Удивительная Атмосфера</span>
+			</div>
+
+			<div class="text_and_icon">Наши бабушки и дедушки говорят что здесь лучше чем дома. И очень быстро заводят друзей и подруг.</div>
+			
+			</th>
+		</tr>
+		<tr>		
+			<th><!--2 -->
+			<div class="heading_item">
+			<img src="img/2.png" alt="HTML5" style="vertical-align: middle;" width="40" height="35"/>
+			<span style="vertical-align: middle; padding-left: 5px;">Заботливый Персонал</span>
+			</div>
+
+			<div class="text_and_icon">Одеться, раздеться, сопровождение на прогулку, помощь в питании, в принятии ванны и душа – наши сиделки всегда рядом</div>
+			
+			</th>
+		</tr>
+		<tr>	
+			<th><!--3 -->
+			<div class="heading_item">
+			<img src="img/3.png" alt="HTML5" style="vertical-align: middle;"  width="45" height="50"/>
+			<span style="vertical-align: middle; padding-left: 5px;">Очень Доступные Цены</span>
+			</div>
+
+			<div class="text_and_icon">У нас очень демократичные цены. И при таких ценах, качество ухода очень высокое. Приезжайте и убедитесь сами</div>
+			
+			</th>
+		</tr>
+		<tr>
+			<th><!--4 -->
+			<div class="heading_item">
+			<img src="img/4.png" alt="HTML5" style="vertical-align: middle;" width="40" height="40"/>
+			<span style="vertical-align: middle; padding-left: 5px;">Безбарьерная Среда</span>
+			</div>
+			
+			<div class="text_and_icon">Инвалидам-колясочникам у нас очень нравится. В пансионате большие комнаты, широкие проемы. На территории удобные для движения колясок дорожки</div>
+			
+			</th>
+		</tr>
+		<tr>	
+			<th><!--5 -->
+			<div class="heading_item">
+			<img src="img/5.png" alt="HTML5" style="vertical-align: middle;" width="30" height="50"/>
+			<span style="vertical-align: middle; padding-left: 5px;">Свобода Перемещения</span>
+			</div>
+			<div class="text_and_icon">Для самостоятельных, в сопровождении сиделок, предусмотрены походы в парки, театры, на выставки. По воскресеньям ходим в ближайший храм</div>
+			
+			</th>
+		</tr>
+		<tr>	
+			<th><!--6 -->
+			<div class="heading_item">
+			<img src="img/6.png" alt="HTML5" style="vertical-align: middle;" width="40" height="40"/>
+			<span style="vertical-align: middle; padding-left: 5px;">Время Для Творчества</span>
+			</div>
+
+			<div class="text_and_icon">У нас каждый находит занятия исходя из своих интересов. Дома это было невозможно по ряду причин, а здесь свобода творчества</div>
+			
+			</th>
+		</tr>
+		</table>
+	</div>
+</div>
+
+<div class="otstup_phone"></div>
+
+ <!-- 4 блок -->
+<div class = "message">
+	<div class="container">
+		<div class="message_text">Оставьте сообщение</div>
+	</div>
+</div>
+
+<div class = "message_phone">
+	<div class="container">
+		<div class="message_text_media">Оставьте<br>сообщение
+		<img src="img/message_media_phone.png" alt="HTML5" style="vertical-align: middle;"/></div>
+		
+		<div class="message_img_phone">
+		<img  src="img/message_media_phone.png" alt="HTML5" style="vertical-align: middle;"/></div> 
+		<div class="message_text_phone">Оставьте<br>сообщение</div>
+	</div>
+</div>
+
+ <!-- 5 блок -->
+<div class="form">
+	<table>
+		<th> 
+			<form id="form" method="post" action="send.php">
+				<div class="form_box">				
+					<div class="group">      
+						<input for="name" type="text" id="name" placeholder="Имя" name="name" onblur="if(this.value.length == 0) this.value = 'Имя'"
+						onfocus="if(this.value == 'Имя') this.value = '' " required
+						oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"/>
+					</div>
+					
+					<div class="group">      
+						<input for="email" type="email" id="email" name="email" value="E-mail" onblur="if(this.value.length == 0) this.value = 'E-mail'" 
+						onfocus="if(this.value == 'E-mail') this.value = '' " required 
+						oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"/>
+					</div>
+					
+					<div class="group">      
+						<input for="name" type="text" id="user_phone"  placeholder="+7(999)999-99-99" name="phone_number" onblur="if(this.value.length == 0) this.value = '+7(999)999-99-99'"
+						onfocus="if(this.value == 'tel') this.value = '' " required 
+						oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"/>
+					</div>
+					
+					 <script>
+						$(document).ready(function() {
+						$("#user_phone").mask("+7(999)999-99-99");
+					  });
+					</script>
+					
+					<div class="group">
+						<div class="group1">
+							<textarea class="mess" id="message" name="msg" onblur="if(this.value.length == 0) this.value = 'Сообщение'" onfocus="if(this.value == 'Сообщение') this.value=''">Сообщение</textarea>
+						</div>	
+					</div>		
+
+					<button id="button" class="button2" class="btn_submit disabled" type="submit" value="Отправить">Отправить</button>
+					<!-- <div id="button" class="button2" class="btn_submit disabled" type="submit" value="Отправить">Отправить</div>  -->
+
+
+					<!-- Выдиление req формы -->
+					<script type="text/javascript">
+						$('group').ready(function() {
+						  $('#button').on('click', function() {
+							$('input[required]').addClass('req');
+						  });
+						});
+					</script>
+					
+					<script type="text/javascript">
+					$('form').submit(function(e) {
+					  var empty = $(this).parent().find("input").filter(function() {
+						return this.value === "";	
+					  });
+					  if (!empty.length) {
+					  document.getElementById(".group").reset();
+						//Если все графы заполнены, то показываем popup
+						$('.popup-fade').show();
+						form.submit();
+						//очищаем все данные текстовых полей, кроме кнопок	
+					  }
+					  	
+					  e.preventDefault();
+					});
+					</script>
+					
+					<!----------------------------------------------------------------------- Открытие popup valid -->
+					<!-- <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script> -->
+					<!-- <script> -->
+					<!-- $(document).ready(function($) { -->
+						<!-- $('#button').click(function() { -->
+							<!-- $('.popup-fade').fadeIn(); -->
+							<!-- return false; -->
+						<!-- });	 -->
+						
+						<!-- $('.popup-close_valid').click(function() { -->
+							<!-- $(this).parents('.popup-fade').fadeOut(); -->
+							<!-- return false; -->
+						<!-- });		 -->
+					 
+						<!-- $(document).keydown(function(e) { -->
+							<!-- if (e.keyCode === 27) { -->
+								<!-- e.stopPropagation(); -->
+								<!-- $('.popup-fade').fadeOut(); -->
+							<!-- } -->
+						<!-- }); -->
+						
+						<!-- $('.popup-fade').click(function(e) { -->
+							<!-- if ($(e.target).closest('.popup_valid').length == 0) { -->
+								<!-- $(this).fadeOut();					 -->
+							<!-- } -->
+						<!-- }); -->
+					<!-- }); -->
+					<!-- </script> -->
+					
+					<!-- Закрытие popup valid -->
+					<script>
+					$(document).ready(function($) {
+						// Клик по ссылке "Закрыть".
+						$('.popup-close_valid').click(function() {
+							$(this).parents('.popup-fade').fadeOut();
+							return false;
+						});        
+					 
+						// Закрытие по клавише Esc.
+						$(document).keydown(function(e) {
+							if (e.keyCode === 27) {
+								e.stopPropagation();
+								$('.popup-fade').fadeOut();
+							}
+						});
+						
+						// Клик по фону, но не по окну.
+						$('.popup-fade').click(function(e) {
+							if ($(e.target).closest('.popup_valid').length == 0) {
+								$(this).fadeOut();					
+							}
+						});	
+					});
+					</script>
+					
+					<!------------------------------------------------------------------- Открытие popup invalid -->
+					<!-- <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script> -->
+					<!-- <script> -->
+					<!-- $(document).ready(function($) { -->
+						<!-- $('#button').click(function() { -->
+							<!-- $('.popup_invalid').fadeIn(); -->
+							<!-- return false; -->
+						<!-- });	 -->
+						
+						<!-- $('.popup-close_invalid').click(function() { -->
+							<!-- $(this).parents('.popup_invalid').fadeOut(); -->
+							<!-- return false; -->
+						<!-- });		 -->
+					 
+						<!-- $(document).keydown(function(e) { -->
+							<!-- if (e.keyCode === 27) { -->
+								<!-- e.stopPropagation(); -->
+								<!-- $('.popup-fade').fadeOut(); -->
+							<!-- } -->
+						<!-- }); -->
+						
+						<!-- $('.popup_invalid').click(function(e) { -->
+							<!-- if ($(e.target).closest('.red').length == 0) { -->
+								<!-- $(this).fadeOut();					 -->
+							<!-- } -->
+						<!-- }); -->
+					<!-- }); -->
+					<!-- </script> -->
+					<!-- Закрытие popup invalid -->
+					<!-- <script> -->
+					<!-- $(document).ready(function($) { -->
+						<!-- // Клик по ссылке "Закрыть". -->
+						<!-- $('.popup-close_invalid').click(function() { -->
+							<!-- $(this).parents('.popup_invalid').fadeOut(); -->
+							<!-- return false; -->
+						<!-- });         -->
+					 
+						<!-- // Закрытие по клавише Esc. -->
+						<!-- $(document).keydown(function(e) { -->
+							<!-- if (e.keyCode === 27) { -->
+								<!-- e.stopPropagation(); -->
+								<!-- $('.popup_invalid').fadeOut(); -->
+							<!-- } -->
+						<!-- }); -->
+						
+						<!-- // Клик по фону, но не по окну. -->
+						<!-- $('.popup-fade').click(function(e) { -->
+							<!-- if ($(e.target).closest('.red').length == 0) { -->
+								<!-- $(this).fadeOut();					 -->
+							<!-- } -->
+						<!-- });	 -->
+					<!-- }); -->
+					<!-- </script> -->
+					
+					<!-- Popup Ошибки -->
+					<div class="popup_invalid">
+						<div class="red">
+							<table>
+								<tr>	
+									<div class="popup-close_invalid"><img src="img/close_invalid.png"></div>	
+								</tr>
+								<tr>
+									<div class="text_okno_invalid">Пожалуйста, заполните все обязательные поля</div>	
+								</tr>
+							</table>	
+						</div>
+					</div>
+					<!-- Popup отправки -->
+					<div class="popup-fade">
+					<script>
+					$(document).ready(function(){
+					$(".popup-fade").magnificPopup();
+					)};
+					</script>
+					<script>
+					$(#form).submit(function(){
+					$.ajax({
+						type: "POST",
+						url: "send.php",
+						data: $(this).serialize()
+					}).done(function(){
+						alert("С");
+						setTimeout(function() {
+						}, 1000);
+					});
+					return false;
+					});
+					</script>
+						<div class="popup_valid" id="popup_valid">
+							<div class="popup-close_valid" href="#"><img src="img/close_valid.png"/></div>
+							<div class="img_ready"><img src="img/ready.png"/></div>
+							<div class="text_okno_valid">Спасибо! Данные успешно<br>отправлены.</div>
+						</div>	
+					</div>	
+				</div>
+			</form>
+		</th>
+		<th>
+			<div class="img_form">
+			<img src="img/form.png" alt="HTML5" style="vertical-align: middle;"/>
+			</div>
+		</th>			
+	</table>	
+</div>
+
+ <!-- 6 блок Вакансия-->
+<div class = "message1">
+	<div class="container">
+		<div class="message_text1">Вакансия</div>
+		
+		<div class="message1_img_phone">
+		<img  src="img/message_media_phone.png" alt="HTML5" style="vertical-align: middle;"/></div> 
+		<div class="message1_text_phone">Вакансия</div>
+		
+		<table class="table1">
+			<tr>
+			<th>
+				<div class="photo_girls">
+					<img src="img/girls.png" alt="HTML5"/>
+				</div>
+				</th>
+				<th>
+				<div class="message2">
+					<div class="message_text2">Ищешь вакансию сиделки?</div>
+					<div class="message_text3">Сиделка — профессия, предполагающая уход за больным<br>человеком, инвалидом, престарелым, утратившим возможность<br>к самообслуживанию. Не требует медицинского образования.</div>
+					<div class="message_text3_phone">Сиделка — профессия, предполагающая уход за больным человеком, инвалидом, престарелым, утратившим возможность к самообслуживанию. Не требует медицинского образования.</div>
+					<div class="message_text4">В обязанности сиделки входит:</div> <a class="button1" href="request.php">Отправить резюме</a> 
+					<div class="message_text5">
+					– контроль за своевременным приемом назначенных<br>медикаментов;<br>
+					– оказание первой медицинской помощи в случае внезапного<br>ухудшения здоровья больного, травм;<br>
+					– осуществление гигиенических процедур;<br>
+					– профилактика пролежней<br>
+					и пневмонии у лежачих больных;<br> 
+					– прогулки с подопечным на свежем воздухе;<br> 
+					– оказание психологической помощи подопечному. 
+					</div>
+					<div class="message_text5_phone">
+					– контроль за своевременным приемом назначенных медикаментов;<br>
+					– оказание первой медицинской помощи в случае внезапного ухудшения здоровья больного, травм;<br>
+					– осуществление гигиенических процедур;<br>
+					– профилактика пролежней<br>
+					и пневмонии у лежачих больных;<br> 
+					– прогулки с подопечным на свежем воздухе;<br> 
+					– оказание психологической помощи подопечному. 
+					</div>
+				</div>
+				</th>
+			</tr>
+		</table>
+		<button id="button_message1_phone" class="button2_phone" class="btn_submit disabled" type="submit" value="Отправить">Отправить резюме</button>
+	</div>
+</div>
+
+<!---- Подвал ---->
+<div class = "footer" width="100%">
+	<div class="container">		
+		<table>
+			<tr>
+				<th rowspan="3" width="300px" height="297px">
+				
+					<div class = "img_ma">
+					<a href="https://www.instagram.com/moskvina.a_/?hl=rusrc="/>
+					<img src="img/footer/ma.png" alt="HTML5"/></div>
+				</th>
+				<th width="350px">
+					<div class = "TheMainThing_footer">
+						<div class = "text_footer1">Контакты</div></div>
+				</th>
+				<th width="270px">
+					<div class = "TheMainThing_footer">
+						<div class = "text_footer2">Меню</div></div>
+				</th>
+				<th>	
+					<div class = "TheMainThing_footer">
+						<div class = "text_footer3">Мы в соц сетях</div></div>
+				</th>
+			</tr>
+			
+			<tr>
+			<td>
+				<div class = "img_strip">
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
+			</td>
+			<td>
+				<div class = "img_strip">
+					<img src="img/footer/strip.png"alt="HTML5"/></div>
+			</td>
+			<td>
+				<div class = "img_strip">
+					<img src="img/footer/strip.png" alt="HTML5"/></div>
+			</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<table class="contacts_footer">
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/gps.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+								<div class="_">
+								<span style="vertical-align: middle;">Московская область,<br>Одинцовский район, дер.<br>Марьино, ул. Южная, д.3</span></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/phone.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+							<div class="_1">
+								<span style="vertical-align: middle;">Моб: +7 (915) 212-28-19</span></div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="img_footer">
+								<img src="img/footer/1message.png" alt="HTML5" style="vertical-align: middle;"/>
+							</td>
+							<td>
+							<div class="_">
+								<span style="vertical-align: middle;">dom-prestarelyh@bk.ru</span></div>
+								</div>
+							</td>
+						</tr>	
+					</table>
+				</td>
+				<td>
+					<div class = "menu_footer">
+					<div class="menu_footer_anim">
+						<a href="">Цены</a>
+					</div>
+						<p>- - - - - - - - - - - - - - - - - - - - - - -</p>
+					<div class="menu_footer_anim">	
+						<a href="">Оформление</a>
+					</div>	
+						<p>- - - - - - - - - - - - - - - - - - - - - - -</p>
+					<div class="menu_footer_anim">	
+						<a href="">Оставить заявку</a>
+					</div>	
+						<p>- - - - - - - - - - - - - - - - - - - - - - -</p>
+					</div>
+				</td>
+				<td>
+					<div class = "social_footer">
+						<div class="img_icon_footer">
+						<a href="https://www.facebook.com/grandpa.filipych">
+							<img src="img/footer/f_icon.png"/></a>
+						<a href="https://vk.com/club155151679">
+							<img src="img/footer/vk_icon.png"/></a>
+						<a href="https://ok.ru/filipych">
+							<img src="img/footer/o_icon.png"/></a>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<div class = "footer_phone" width="100%">
+		<div class="container">	
+			<table>
+				<tr>
+					<div class = "img_ma_phone">
+						<a href="https://www.instagram.com/moskvina.a_/?hl=rusrc="></a>
+						<img src="img/footer/ma.png" width="75x" height="86px" alt="HTML5"/></div>
+				</tr>	
+			</table>
+			
+			<table>
+				<tr>
+					<td>
+						<div class = "TheMainThing_footer_phone1">Контакты</div>
+					</td>
+				</tr>
+			</table>
+			<table>	
+				<tr>
+					<td>
+						<div class = "img_strip_phone">
+						<img src="img/footer/strip.png" alt="HTML5"/></div>
+					</td>
+				</tr>
+			</table>
+			
+			<table class="contacts_footer_phone">
+				<tr>		
+					<td>
+							<tr>
+								<td>
+									<div class="img_footer">
+									<img src="img/footer/gps.png" alt="HTML5" style="vertical-align: middle;"/>
+								</td>
+								<td>
+									<div class="_phone">
+									<span style="vertical-align: middle;">Московская область,<br>Одинцовский район, дер.<br>Марьино, ул. Южная, д.</span></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="img_footer">
+									<img src="img/footer/phone.png" alt="HTML5" style="vertical-align: middle;"/>
+								</td>
+								<td>
+								<div class="_phone1">
+									<span style="vertical-align: middle;">Моб: +7 (915) 212-28-19</span></div>
+										</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="img_footer">
+									<img src="img/footer/1message.png" alt="HTML5" style="vertical-align: middle;"/>
+								</td>
+								<td>
+								<div class="_phone">
+									<span style="vertical-align: middle;">dom-prestarelyh@bk.ru</span></div>
+									</div>
+								</td>
+							</tr>	
+					</td>
+				</tr>
+			</table>
+			
+			<table>		
+				<tr>
+					<td>
+						<div class = "TheMainThing_footer_phone2">Мы в соц сетях</div></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class = "img_strip1_phone">
+						<img src="img/footer/strip.png" alt="HTML5"/></div>
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>
+						<div class = "social_footer_phone">
+							<div class="img_icon_footer_phone">
+							<a href="https://www.facebook.com/grandpa.filipych">
+								<img src="img/footer/f_icon.png" width="35x" height="35px"/></a>
+							<a href="https://vk.com/club155151679">
+								<img src="img/footer/vk_icon.png" width="35x" height="35px"/></a>
+							<a href="https://ok.ru/filipych">
+								<img src="img/footer/o_icon.png" width="35x" height="35px"/></a>
+							</div>
+						</div>
+					</td>
+				</tr>	
+			</table>
+		</div>
+	</div>
+</div>
+
+<div class = "black_width">
+	<div class="black_footer" width=" 100%">
+		<div class="container">©2020 Частный дом престарелых «Филипыч»
+		</div>
+	</div>
+</div>
+
+
+<!------------------ Доп кнопки -------------------->
+<!---- Кн поднятия ---->
+<div id="button_up"><img src="img/up.png"/></div>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#button_up').fadeIn();
+} else {
+$('#button_up').fadeOut();
+}
+});
+$('#button_up').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+<!---- Скролл меню ---->
+<script> 
+  var h_hght = 110; // высота шапки
+  var h_mrg = 0;    // отступ когда шапка уже не видна
+  $(function(){
+   $(window).scroll(function(){
+      var top = $(this).scrollTop();
+      var elem = $('#scroll');
+      if (top+h_mrg < h_hght) {
+       elem.css('top', (h_hght-top));
+      } else {
+       elem.css('top', h_mrg);
+      }
+    });
+  });
+</script>
+<script type="text/javascript">
+var h_hght = 110; // высота шапки
+  var h_mrg = 0;    // отступ когда шапка уже не видна
+     $(function(){
+     $(window).scroll(function() {
+      var top = $(this).scrollTop();
+       if (top < 110) $('.menu-main').css("box-shadow", "none");
+       else $(".menu-main").css("box-shadow", "0 0 3px rgba(0,0,0,0.5)");
+     });
+    });
+</script>
+<!---- Скролл полоски  ---->
+<script type="text/javascript">
+var h_hght1 = 0; // высота шапки
+  var h_mrg1 = 0;    // отступ когда шапка уже не видна
+     $(function(){
+     $(window).scroll(function() {
+      var top = $(this).scrollTop();
+       if (top < 110) $('.progress-container').css("background-color", "#fff");
+       else $(".progress-container").css("background-color", "#ebe2e8");
+     });
+    });
+</script>
+<!---- Скролл видимости полоски  ---->
+<script>
+var h_hght1 = 0; // высота шапки
+  var h_mrg1 = 0;    // отступ когда шапка уже не видна
+     $(function(){
+     $(window).scroll(function() {
+      var top = $(this).scrollTop();
+       if (top > 110) $('.progress-container').css("opacity", "1");
+       else $(".progress-container").css("opacity", "1");
+     });
+    });
+</script>
+<!---------- Кн звонка ---------->
+<a href="tel: 89005553535" id="button_bell"><img src="img/bell1.png"/></a>
+<!-- <div id="button_bell"><a href="tel: 89005553535"></div> -->
+
+</body>
+</html> 

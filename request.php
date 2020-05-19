@@ -88,8 +88,8 @@
 				</li>
 				<li><a class= "top_" href="prices.html">Цены</a></li>
 				<li><a class= "top_" href="oformlenie.html">Оформление</a></li>
-				<li><a class="active-button" href="contacts.html">Контакты</a></li>
-				<li><a class= "top_" href="request.php">Отправить заявку</a></li>
+				<li><a class= "top_" href="contacts.html">Контакты</a></li>
+				<li><a class="active-button" href="request.php">Отправить заявку</a></li>
 				<li><a class= "top_" href="reviews.php">Отзывы</a></li>
 			</ul>
 		</nav>
@@ -149,266 +149,251 @@
 
 <div class = "message">
 	<div class="container">
-		<div class="message_text">Наш адрес и контакты</div>
-		<!-- <img src="img/message_media_phone.png" alt="HTML5" style="vertical-align: middle;" width="320" height="60"/></div> -->
+		<div class="message_text">Отправить заявку</div>
 	</div>
 </div>
 
 <div class = "message_phone">
 	<div class="container">
-		<div class="message_text_media">Наш адрес и<br>контакты
+		<div class="message_text_media">Отправить<br>заявку
 		<img src="img/message_media_phone.png" alt="HTML5" style="vertical-align: middle;" width="320" height="60"/></div>
 		
 		<div class="message_img_phone">
 		<img  src="img/message_media_phone.png" alt="HTML5" style="vertical-align: middle;" /></div> 
-		<div class="message_text_phone">Наш адрес и<br>контакты</div>
+		<div class="message_text_phone">Отправить<br>заявку</div>
 	</div>
 </div>
 
+<div class="form">
+	<table>
+		<th>
+			<form id="form" method="post" action="send.php">
+				<div class="form_box">				
+					<div class="group">      
+						<input type="text" id="name" placeholder="Имя" name="name" onblur="if(this.value.length == 0) this.value = 'Имя'"
+						onfocus="if(this.value == 'Имя') this.value = '' " required
+						oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"/>
+					</div>
+					
+					<div class="group">      
+						<input type="email" id="email" name="email" value="E-mail" onblur="if(this.value.length == 0) this.value = 'E-mail'" 
+						onfocus="if(this.value == 'E-mail') this.value = '' " required 
+						oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"/>
+					</div>
+					
+					<script src="js/jquery.maskedinput.min.js"></script>
+					<div class="group">      
+						<input type="text" id="user_phone"  placeholder="+7(999)999-99-99" name="phone_number" onblur="if(this.value.length == 0) this.value = '+7(999)999-99-99'"
+						onfocus="if(this.value == 'tel') this.value = '' " required 
+						oninvalid="this.setCustomValidity(' ')" oninput="setCustomValidity('')"/>
+					</div>
+					
+					 <script>
+						$(document).ready(function() {
+						$("#user_phone").mask("+7(999)999-99-99");
+					  });
+					</script>
+					
+					<div class="group">
+						<div class="group1">
+							<textarea class="mess" id="message" name="msg" onblur="if(this.value.length == 0) this.value = 'Сообщение'" onfocus="if(this.value == 'Сообщение') this.value=''">Сообщение</textarea>
+						</div>	
+					</div>		
 
-<div class="contacts">
-	<div class="container">
-			<table>	
-				<tr>
-					<td rowspan="3">
-						<div class="infa0">
-							<img src="img/photo_contacts/1.png" alt="HTML5" style="vertical-align: middle;" />	
+					<button id="button" class="button2" class="btn_submit disabled" type="submit" value="Отправить">Отправить</button>
+					
+					
+					<script>
+					$(document).ready(function(){
+					$(".popup-fade").magnificPopup();
+					)};
+					</script>
+					
+					<script>
+					$(.form).submit(function(){
+					$.ajax({
+						type: "POST",
+						url: "mail.php",
+						data: $(this).serialize()
+					}).done(function(){
+						alert("С");
+						setTimeout(function() {
+						}, 1000);
+					});
+					return false;
+					});
+					</script>
+					
+					
+					<!-- req формы -->
+					<script type="text/javascript">
+						$('group').ready(function() {
+						  $('#button').on('click', function() {
+							$('input[required]').addClass('req');
+						  });
+						});
+					</script>
+					
+					<script type="text/javascript">
+					$('#form').submit(function(e) {
+					  var empty = $(this).parent().find("input").filter(function() {
+						return this.value === "";	
+					  });
+					  if (!empty.length) {
+					  document.getElementById(".group").reset();
+						//Если все графы заполнены, то показываем popup
+						$('.popup-fade').show();
+						form.submit();
+						//очищаем все данные текстовых полей, кроме кнопок	
+							$('#form').trigger('reset'); // очистка формы				
+						// $('.group').value('').change();
+						// $(".group").reset();
+					  }
+					  	
+					  e.preventDefault();
+					  
+					});
+					</script>
+					
+					<!----------------------------------------------------------------------- Открытие popup valid -->
+					<!-- <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script> -->
+					<!-- <script> -->
+					<!-- $(document).ready(function($) { -->
+						<!-- $('#button').click(function() { -->
+							<!-- $('.popup-fade').fadeIn(); -->
+							<!-- return false; -->
+						<!-- });	 -->
+						
+						<!-- $('.popup-close_valid').click(function() { -->
+							<!-- $(this).parents('.popup-fade').fadeOut(); -->
+							<!-- return false; -->
+						<!-- });		 -->
+					 
+						<!-- $(document).keydown(function(e) { -->
+							<!-- if (e.keyCode === 27) { -->
+								<!-- e.stopPropagation(); -->
+								<!-- $('.popup-fade').fadeOut(); -->
+							<!-- } -->
+						<!-- }); -->
+						
+						<!-- $('.popup-fade').click(function(e) { -->
+							<!-- if ($(e.target).closest('.popup_valid').length == 0) { -->
+								<!-- $(this).fadeOut();					 -->
+							<!-- } -->
+						<!-- }); -->
+					<!-- }); -->
+					<!-- </script> -->
+					
+					<!-- Закрытие popup valid -->
+					<script>
+					$(document).ready(function($) {
+						// Клик по ссылке "Закрыть".
+						$('.popup-close_valid').click(function() {
+							$(this).parents('.popup-fade').fadeOut();
+							return false;
+						});        
+					 
+						// Закрытие по клавише Esc.
+						$(document).keydown(function(e) {
+							if (e.keyCode === 27) {
+								e.stopPropagation();
+								$('.popup-fade').fadeOut();
+							}
+						});
+						
+						// Клик по фону, но не по окну.
+						$('.popup-fade').click(function(e) {
+							if ($(e.target).closest('.popup_valid').length == 0) {
+								$(this).fadeOut();					
+							}
+						});	
+					});
+					</script>
+					
+					<!------------------------------------------------------------------- Открытие popup invalid -->
+					<!-- <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script> -->
+					<!-- <script> -->
+					<!-- $(document).ready(function($) { -->
+						<!-- $('#button').click(function() { -->
+							<!-- $('.popup_invalid').fadeIn(); -->
+							<!-- return false; -->
+						<!-- });	 -->
+						
+						<!-- $('.popup-close_invalid').click(function() { -->
+							<!-- $(this).parents('.popup_invalid').fadeOut(); -->
+							<!-- return false; -->
+						<!-- });		 -->
+					 
+						<!-- $(document).keydown(function(e) { -->
+							<!-- if (e.keyCode === 27) { -->
+								<!-- e.stopPropagation(); -->
+								<!-- $('.popup-fade').fadeOut(); -->
+							<!-- } -->
+						<!-- }); -->
+						
+						<!-- $('.popup_invalid').click(function(e) { -->
+							<!-- if ($(e.target).closest('.red').length == 0) { -->
+								<!-- $(this).fadeOut();					 -->
+							<!-- } -->
+						<!-- }); -->
+					<!-- }); -->
+					<!-- </script> -->
+					<!-- Закрытие popup invalid -->
+					<!-- <script> -->
+					<!-- $(document).ready(function($) { -->
+						<!-- // Клик по ссылке "Закрыть". -->
+						<!-- $('.popup-close_invalid').click(function() { -->
+							<!-- $(this).parents('.popup_invalid').fadeOut(); -->
+							<!-- return false; -->
+						<!-- });         -->
+					 
+						<!-- // Закрытие по клавише Esc. -->
+						<!-- $(document).keydown(function(e) { -->
+							<!-- if (e.keyCode === 27) { -->
+								<!-- e.stopPropagation(); -->
+								<!-- $('.popup_invalid').fadeOut(); -->
+							<!-- } -->
+						<!-- }); -->
+						
+						<!-- // Клик по фону, но не по окну. -->
+						<!-- $('.popup-fade').click(function(e) { -->
+							<!-- if ($(e.target).closest('.red').length == 0) { -->
+								<!-- $(this).fadeOut();					 -->
+							<!-- } -->
+						<!-- });	 -->
+					<!-- }); -->
+					<!-- </script> -->
+					
+					<div class="popup_invalid">
+						<div class="red">
+							<table>
+								<tr>	
+									<div class="popup-close_invalid"><img src="img/close_invalid.png"></div>	
+								</tr>
+								<tr>
+									<div class="text_okno_invalid">Пожалуйста, заполните все обязательные поля</div>	
+								</tr>
+							</table>	
 						</div>
-					</td>
-					<td>
-						<div class="infa1">
-							<h4>Адрес Пансионата</h4>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa2">
-							<img src="img/photo_contacts/st.png" alt="HTML5" style="vertical-align: middle;"/>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa3">
-							Московская область, Одинцовский<br>район, дер. Марьино, ул. Южная, д.3
-						</div>
-					</td>
-				</tr>
-
-				<tr>
-					<td rowspan="3">
-						<div class="infa0">
-							<img src="img/photo_contacts/2.png" alt="HTML5" style="vertical-align: middle;" />	
-						</div>
-					</td>
-					<td>
-						<div class="infa1">
-							<h4>Расположение Офиса</h4>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa2">
-							<img src="img/photo_contacts/st.png" alt="HTML5" style="vertical-align: middle;"/>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa3">
-							Москва, улица Маршала<br>Прошлякова, 30 (БЦ Зенит Плаза)
-						</div>
-					</td>
-				</tr>
-				
-				
-				<tr>
-					<td rowspan="3">
-						<div class="infa0">
-							<img src="img/photo_contacts/3.png" alt="HTML5" style="vertical-align: middle;" />	
-						</div>
-					</td>
-					<td>
-						<div class="infa1">
-							<h4>Звоните В Любое Время</h4>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa2">
-							<img src="img/photo_contacts/st.png" alt="HTML5" style="vertical-align: middle;"/>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa3">
-							+7 (915) 212-28-19<br>+7 (499) 938-40-63
-						</div>
-					</td>
-				</tr>
-				
-				
-				<tr>
-					<td rowspan="3">
-						<div class="infa4">
-							<img src="img/photo_contacts/4.png" alt="HTML5" style="vertical-align: middle;" />	
-						</div>
-					</td>
-					<td>
-						<div class="infa1">
-							<h4>Часы Работы</h4>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa2">
-							<img src="img/photo_contacts/st.png" alt="HTML5" style="vertical-align: middle;"/>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa3">
-							Круглосуточно
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
+					</div>
+					
+					<div href="#form" class="popup-fade">
+						<div class="popup_valid" id="popup_valid">
+							<div class="popup-close_valid" href="#"><img src="img/close_valid.png"/></div>
+							<div class="img_ready"><img src="img/ready.png"/></div>
+							<div class="text_okno_valid">Спасибо! Данные успешно<br>отправлены.</div>
+						</div>	
+					</div>	
+				</div>
+			</form>
+		</th>
+		<th>
+			<div class="img_form">
+			<img src="img/form.png" alt="HTML5" style="vertical-align: middle;"/>
+			</div>
+		</th>			
+	</table>	
 </div>
-
-
-<div class="contacts_phone">
-	<div class="container">
-			<table>	
-				<tr>
-					<td rowspan="3">
-						<div class="infa0">
-							<img src="img/photo_contacts/1.png" alt="HTML5" style="vertical-align: middle;" width="40px" height="40px"/>	
-						</div>
-					</td>
-					<td>
-						<div class="infa1">
-							<h4>Адрес Пансионата</h4>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa2">
-							<img src="img/photo_contacts/st.png" alt="HTML5" style="vertical-align: middle;"/>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa3">
-							Московская область, Одинцовский<br>район, дер. Марьино, ул. Южная, д.3
-						</div>
-					</td>
-				</tr>
-
-				<tr>
-					<td rowspan="3">
-						<div class="infa0">
-							<img src="img/photo_contacts/2.png" alt="HTML5" style="vertical-align: middle;" width="30px" height="40px"/>	
-						</div>
-					</td>
-					<td>
-						<div class="infa1">
-							<h4>Расположение Офиса</h4>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa2">
-							<img src="img/photo_contacts/st.png" alt="HTML5" style="vertical-align: middle;"/>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa3">
-							Москва, улица Маршала<br>Прошлякова, 30 (БЦ Зенит Плаза)
-						</div>
-					</td>
-				</tr>
-				
-				
-				<tr>
-					<td rowspan="3">
-						<div class="infa0">
-							<img src="img/photo_contacts/3.png" alt="HTML5" style="vertical-align: middle;" width="40px" height="40px"/>	
-						</div>
-					</td>
-					<td>
-						<div class="infa1">
-							<h4>Звоните В Любое Время</h4>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa2">
-							<img src="img/photo_contacts/st.png" alt="HTML5" style="vertical-align: middle;"/>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa3">
-							+7 (915) 212-28-19<br>+7 (499) 938-40-63
-						</div>
-					</td>
-				</tr>
-				
-				
-				<tr>
-					<td rowspan="3">
-						<div class="infa4">
-							<img src="img/photo_contacts/4.png" alt="HTML5" style="vertical-align: middle;" width="40px" height="40px"/>	
-						</div>
-					</td>
-					<td>
-						<div class="infa1">
-							<h4>Часы Работы</h4>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa2">
-							<img src="img/photo_contacts/st.png" alt="HTML5" style="vertical-align: middle;"/>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="infa3">
-							Круглосуточно
-						</div>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-</div>
-
-
-<div class="contacts_map">
-		<div class="map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac7494bd93ae437766c7acaa24cb52233dc2c551fc5d9c5222b0354224663a583&amp;width=100%25&amp;height=385&amp;lang=ru_RU&amp;scroll=true"></script>
-		</div>
-</div>
-
-
 
 <!---- Доп кнопки ----->
 <!---- Кн поднятия ---->
@@ -481,7 +466,7 @@ var h_hght1 = 0; // высота шапки
 
 
 <!---- Подвал ---->
-<div class = "footer_contacts">
+<div class = "footer_prices">
 <div class="container">		
 		<table width="100%" height="300px">
 			<tr>
@@ -591,7 +576,7 @@ var h_hght1 = 0; // высота шапки
 	</div>
 </div>
 
-<div class = "footer_contacts_phone">
+<div class = "footer_request_phone">
 	<div class="container">	
 		<table>
 			<tr>
@@ -690,7 +675,7 @@ var h_hght1 = 0; // высота шапки
 </div>
 
 <div class = "black_width">
-<div class="black_footer_contacts">
+<div class="black_footer_request">
 	<div class="container">©2020 Частный дом престарелых «Филипыч»</div>
 </div>
 </div>
